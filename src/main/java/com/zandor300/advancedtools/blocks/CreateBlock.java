@@ -1,11 +1,11 @@
 package com.zandor300.advancedtools.blocks;
 
+import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
 import com.zandor300.advancedtools.creativetab.CreativeTabAT;
-import com.zandor300.advancedtools.lib.RefStrings;
 
 public class CreateBlock extends Block {
 
@@ -18,6 +18,6 @@ public class CreateBlock extends Block {
 		this.setResistance(resistance);
 		this.setLightLevel(lightlevel);
 		this.setBlockName(name);
-		this.setBlockTextureName(RefStrings.MODID + ":" + texture);
+		this.setBlockTextureName(Reference.MOD_ID + ":" + texture);
 	}
 }

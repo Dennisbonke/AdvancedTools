@@ -1,6 +1,7 @@
 package com.zandor300.advancedtools;
 
 import com.zandor300.advancedtools.reference.Reference;
+import com.zandor300.advancedtools.utilities.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -52,7 +53,7 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class AdvancedTools {
 
 	@SidedProxy(clientSide = Reference.CLIENTSIDE, serverSide = Reference.SERVERSIDE)
@@ -113,7 +114,9 @@ public class AdvancedTools {
 	public static Item redstoneHoe = new RedstoneHoe(5014, redstone);
 
 	@EventHandler
-	public static void PreInit(FMLPreInitializationEvent event) {
+	public static void PreInit(FMLPreInitializationEvent event)
+    {
+        LogHelper.info("Pre Initialization Complete!");
 		Proxy.registerRenderInfo();
 
 		GameRegistry.registerBlock(Transformer, "Transformer");
@@ -197,7 +200,9 @@ public class AdvancedTools {
 	}
 
 	@EventHandler
-	public static void Init(FMLInitializationEvent event) {
+	public static void Init(FMLInitializationEvent event)
+    {
+        LogHelper.info("Initialization Complete!");
 		GameRegistry.addShapedRecipe(new ItemStack(boneIngot), "BBB", "BBB",
 				'B', Items.bone);
 		GameRegistry.addShapedRecipe(new ItemStack(redstoneIngot), "RRR",
@@ -205,7 +210,8 @@ public class AdvancedTools {
 	}
 
 	@EventHandler
-	public static void PostInit(FMLPostInitializationEvent event) {
-
+	public static void PostInit(FMLPostInitializationEvent event)
+    {
+        LogHelper.info("Post Initiaalization Complete!");
 	}
 }

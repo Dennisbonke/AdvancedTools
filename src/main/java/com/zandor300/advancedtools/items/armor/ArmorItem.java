@@ -1,12 +1,12 @@
 package com.zandor300.advancedtools.items.armor;
 
+import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
 import com.zandor300.advancedtools.AdvancedTools;
 import com.zandor300.advancedtools.creativetab.CreativeTabAT;
-import com.zandor300.advancedtools.lib.RefStrings;
 
 public class ArmorItem extends ItemArmor {
 
@@ -14,7 +14,7 @@ public class ArmorItem extends ItemArmor {
 		super(material, j, j);
 		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName(name);
-		this.setTextureName(RefStrings.MODID + ":" + texture);
+		this.setTextureName(Reference.MOD_ID + ":" + texture);
 	}
 
 	@Override
@@ -23,9 +23,9 @@ public class ArmorItem extends ItemArmor {
 		if (stack.getItem() == AdvancedTools.emeraldHelmet
 				|| stack.getItem() == AdvancedTools.emeraldChestplate
 				|| stack.getItem() == AdvancedTools.emeraldBoots)
-			return RefStrings.MODID + ":textures/models/armor/emerald_1.png";
+			return Reference.MOD_ID + ":textures/models/armor/emerald_1.png";
 		if (stack.getItem() == AdvancedTools.emeraldLeggings)
-			return RefStrings.MODID + ":textures/models/armor/emerald_2.png";
+			return Reference.MOD_ID + ":textures/models/armor/emerald_2.png";
 		return null;
 	};
 }
