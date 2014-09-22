@@ -5,7 +5,9 @@ AdvancedTools Mod!
 
 
 Authors
-=======
+-------
 
-- Zandor Smith
-- Dennis Bonke
+- Zandor Smith (https://github.com/Zandor300)
+- Dennis Bonke (https://github.com/Dennisbonke)
+
+
