@@ -1,14 +1,14 @@
 package com.zandor300.advancedtools.creativetab;
 
+import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 import com.zandor300.advancedtools.AdvancedTools;
-import com.zandor300.advancedtools.lib.RefStrings;
 
 public class CreativeTabAT {
 
-	public static final CreativeTabs tab = new CreativeTabs(RefStrings.MODID) {
+	public static final CreativeTabs tab = new CreativeTabs(Reference.MOD_ID) {
 		@Override
 		public Item getTabIconItem() {
 			return AdvancedTools.emeraldSword;
@@ -16,7 +16,7 @@ public class CreativeTabAT {
 
 		@Override
 		public String getTranslatedTabLabel() {
-			return RefStrings.NAME;
+			return Reference.MOD_NAME;
 		}
 	};
 }
