@@ -17,7 +17,7 @@ AdvancedTools Mod!
 <h3>Dennis Bonke</H3>
 
 - Github: https://github.com/Dennisbonke
-- Twitter: Coming soon!
-- Facebook: Coming soon!
-- YouTube: Coming soon!
-- Website: Coming soon!
+- Twitter: https://twitter.com/Dennisbonke2000
+- Facebook: https://www.facebook.com/profile.php?id=100007989136903
+- YouTube: https://www.youtube.com/channel/UC5jAn-sglXv8wgr9ijSnsAw
+- Website: http://www.minecraftforum.net/members/Dennis_Bonke
