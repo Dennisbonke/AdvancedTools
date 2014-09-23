@@ -1,7 +1,36 @@
 // items
+item.advancedtools:Strawberry.name=Strawberry
+item.advancedtools:LuckyStar.name=Lucky Star
+item.advancedtools:boneIngot.name=Bone Ingot
+item.advancedtools:bonePickaxe.name=Bone Pickaxe
+item.advancedtools:boneShovel.name=Bone Shovel
+item.advancedtools:boneAxe.name=Bone Axe
+item.advancedtools:boneHoe.name=Bone Hoe
+item.advancedtools:boneSword.name=Bone Sword
+item.advancedtools:redstoneIngot.name=Redstone Ingot
+item.advancedtools:redstonePickaxe.name=Redstone Pickaxe
+item.advancedtools:redstoneAxe.name=Redstone Axe
+item.advancedtools:redstoneHoe.name=Redstone Hoe
+item.advancedtools:redstoneShovel.name=Redstone Shovel
+item.advancedtools:redstoneSword.name=Redstone Sword
+item.advancedtools:emeraldPickaxe.name=Emerald Pickaxe
+item.advancedtools:emeraldAxe.name=Emerald Axe
+item.advancedtools:emeraldShovel.name=Emerald Shovel
+item.advancedtools:emeraldSword.name=Emerald Sword
+item.advancedtools:emeraldHoe.name=Emerald Hoe
+item.advancedtools:emeraldHelmet.name=Emerald Helmet
+item.advancedtools:emeraldBoots.name=Emerald Boots
+item.advancedtools:emeraldLeggings.name=Emerald Leggings
+item.advancedtools:emeraldChestplate.name=Emerald Chestplate
 
 // blocks
+tile.advancedtools:StrawberryCrop.name=Strawberry Crop
+tile.advancedtools:Transformer.name=Transformer
+tile.advancedtools:Lamp.name=Lamp
+tile.advancedtools:LuckyStarBlock.name=Lucky Star Block
+
 
 // creative tab
+
 
 // mobs
