@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.1_alpha_2"
+version = "0.1_alpha_3"
 group= "com.zandor300.advancedtools" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Advanced Tools"
 
