@@ -1,8 +1,7 @@
 package com.zandor300.advancedtools.items.tools.bone;
 
-import net.minecraft.item.ItemSpade;
-
 import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import net.minecraft.item.ItemSpade;
 
 public class BoneShovel extends ItemSpade {
 

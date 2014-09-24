@@ -1,11 +1,11 @@
 package com.zandor300.advancedtools.items.armor;
 
+import com.zandor300.advancedtools.init.ModItems;
 import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
-import com.zandor300.advancedtools.AdvancedTools;
 import com.zandor300.advancedtools.creativetab.CreativeTabAT;
 
 public class ArmorItem extends ItemArmor {
@@ -20,11 +20,11 @@ public class ArmorItem extends ItemArmor {
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot,
 			String type) {
-		if (stack.getItem() == AdvancedTools.emeraldHelmet
-				|| stack.getItem() == AdvancedTools.emeraldChestplate
-				|| stack.getItem() == AdvancedTools.emeraldBoots)
+		if (stack.getItem() == ModItems.emeraldHelmet
+				|| stack.getItem() == ModItems.emeraldChestplate
+				|| stack.getItem() == ModItems.emeraldBoots)
 			return Reference.MOD_ID + ":textures/models/armor/emerald_1.png";
-		if (stack.getItem() == AdvancedTools.emeraldLeggings)
+		if (stack.getItem() == ModItems.emeraldLeggings)
 			return Reference.MOD_ID + ":textures/models/armor/emerald_2.png";
 		return null;
 	};

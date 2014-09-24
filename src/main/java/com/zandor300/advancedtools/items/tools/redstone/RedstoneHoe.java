@@ -1,8 +1,7 @@
 package com.zandor300.advancedtools.items.tools.redstone;
 
-import net.minecraft.item.ItemHoe;
-
 import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import net.minecraft.item.ItemHoe;
 
 public class RedstoneHoe extends ItemHoe {
 

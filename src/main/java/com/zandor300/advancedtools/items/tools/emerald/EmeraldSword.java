@@ -1,8 +1,7 @@
 package com.zandor300.advancedtools.items.tools.emerald;
 
-import net.minecraft.item.ItemSword;
-
 import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import net.minecraft.item.ItemSword;
 
 public class EmeraldSword extends ItemSword {
 
