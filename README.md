@@ -2,6 +2,8 @@
 
 AdvancedTools Mod!
 
+Jenkins: http://play.zsinfo.nl:8080/job/AdvancedTools/
+
 
 <h2>Authors</h2>
 
