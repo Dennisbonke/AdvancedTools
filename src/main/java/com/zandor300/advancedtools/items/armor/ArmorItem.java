@@ -27,5 +27,5 @@ public class ArmorItem extends ATItemArmor {
 		if (stack.getItem() == ModItems.emeraldLeggings)
 			return Reference.MOD_ID + ":textures/models/armor/emerald_2.png";
 		return null;
-	};
+	}
 }
