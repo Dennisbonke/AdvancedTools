@@ -1,6 +1,6 @@
 package com.zandor300.advancedtools;
 
-import com.zandor300.advancedtools.init.ModBlocks;
+//import com.zandor300.advancedtools.init.ModBlocks;
 import com.zandor300.advancedtools.init.ModItems;
 import com.zandor300.advancedtools.reference.Reference;
 import com.zandor300.advancedtools.utilities.LogHelper;
@@ -36,7 +36,7 @@ public class AdvancedTools {
 		registerEntity(FrankensteinMob.class, "Frankenstein", 0xeaeae9,
 				0xc99a03);
 
-        ModBlocks.init();
+       	// ModBlocks.init();
 
         ModItems.init();
 

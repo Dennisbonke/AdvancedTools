@@ -1,10 +1,10 @@
 package com.zandor300.advancedtools.items.armor;
 
-import com.zandor300.advancedtools.init.ModItems;
+//import com.zandor300.advancedtools.init.ModItems;
 import com.zandor300.advancedtools.reference.Reference;
-import net.minecraft.entity.Entity;
+//import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemStack;
+//import net.minecraft.item.ItemStack;
 
 import com.zandor300.advancedtools.creativetab.CreativeTabAT;
 

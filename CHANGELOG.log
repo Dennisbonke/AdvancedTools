@@ -1,3 +1,8 @@
+version 0.1.4[AS]:
+changed version number, it now means major.minor.revision[state[A = alpha, B = beta, R = release, stable = S]
+disabled the blocks and the non localized / texture missing items.
+localization for the ingots and the tools are done, armour is next on the list.
+
 version 0.1_alpha_3:
 items and blocs are now registerd in ModBlocks and ModItems instead of the main class.
 en_US.lang file for items and blocks is complete
