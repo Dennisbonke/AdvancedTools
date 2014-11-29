@@ -1,8 +1,8 @@
 package com.zandor300.advancedtools.init;
 
-//import com.zandor300.advancedtools.items.armor.ArmorItem;
-//import com.zandor300.advancedtools.items.food.LuckyStar;
-//import com.zandor300.advancedtools.items.food.Strawberry;
+import com.zandor300.advancedtools.items.armor.ArmorItem;
+import com.zandor300.advancedtools.items.food.LuckyStar;
+import com.zandor300.advancedtools.items.food.Strawberry;
 import com.zandor300.advancedtools.items.tools.bone.*;
 import com.zandor300.advancedtools.items.tools.emerald.*;
 import com.zandor300.advancedtools.items.tools.ingot.BoneIngot;
@@ -11,7 +11,7 @@ import com.zandor300.advancedtools.items.tools.redstone.*;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
-//import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
@@ -39,21 +39,21 @@ public class ModItems {
 
     public static Item.ToolMaterial emerald = EnumHelper.addToolMaterial("Emerald",
             3, 2000, 10.0f, 4.0f, 22);
-    //public static ItemArmor.ArmorMaterial emeraldArmor = EnumHelper.addArmorMaterial(
-     //       "Emerald", 43, new int[] { 4, 6, 5, 4 }, 25);
+    public static ItemArmor.ArmorMaterial emeraldArmor = EnumHelper.addArmorMaterial(
+           "Emerald", 43, new int[] { 4, 6, 5, 4 }, 25);
     public static Item emeraldPickaxe = new EmeraldPickaxe(5000, emerald);
     public static Item emeraldShovel = new EmeraldShovel(5001, emerald);
     public static Item emeraldAxe = new EmeraldAxe(5002, emerald);
     public static Item emeraldSword = new EmeraldSword(5003, emerald);
     public static Item emeraldHoe = new EmeraldHoe(5004, emerald);
-   // public static Item emeraldHelmet = new ArmorItem("EmeraldHelmet",
-    //        "emeraldhelmet", emeraldArmor, 0);
-    //public static Item emeraldChestplate = new ArmorItem("EmeraldChestplate",
-    //        "emeraldchestplate", emeraldArmor, 1);
-    //public static Item emeraldLeggings = new ArmorItem("EmeraldLeggings",
-    //        "emeraldleggings", emeraldArmor, 2);
-    //public static Item emeraldBoots = new ArmorItem("Emeraldboots",
-     //       "emeraldboots", emeraldArmor, 3);
+    public static Item emeraldHelmet = new ArmorItem("EmeraldHelmet",
+            "emeraldhelmet", emeraldArmor, 0);
+    public static Item emeraldChestplate = new ArmorItem("EmeraldChestplate",
+            "emeraldchestplate", emeraldArmor, 1);
+    public static Item emeraldLeggings = new ArmorItem("EmeraldLeggings",
+            "emeraldleggings", emeraldArmor, 2);
+    public static Item emeraldBoots = new ArmorItem("Emeraldboots",
+           "emeraldboots", emeraldArmor, 3);
 
     public static void init() {
      //   GameRegistry.registerItem(Strawberry, "Strawberry");
@@ -68,10 +68,10 @@ public class ModItems {
        GameRegistry.registerItem(emeraldSword, "Emerald Sword");
        GameRegistry.registerItem(emeraldHoe, "Emerald Hoe");
 
-     //   GameRegistry.registerItem(emeraldHelmet, "Emerald Helmet");
-     //   GameRegistry.registerItem(emeraldChestplate, "Emerald Chestplate");
-     //   GameRegistry.registerItem(emeraldLeggings, "Emerald Leggings");
-     //   GameRegistry.registerItem(emeraldBoots, "Emerald Boots");
+        GameRegistry.registerItem(emeraldHelmet, "Emerald Helmet");
+        GameRegistry.registerItem(emeraldChestplate, "Emerald Chestplate");
+        GameRegistry.registerItem(emeraldLeggings, "Emerald Leggings");
+        GameRegistry.registerItem(emeraldBoots, "Emerald Boots");
 
         GameRegistry.registerItem(bonePickaxe, "Bone Pickaxe");
         GameRegistry.registerItem(boneShovel, "Bone Shovel");
