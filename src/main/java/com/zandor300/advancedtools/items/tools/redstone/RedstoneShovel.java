@@ -12,3 +12,4 @@ public class RedstoneShovel extends ItemSpade {
 		this.setTextureName("advancedtools:redstoneshovel");
 	}
 }
+

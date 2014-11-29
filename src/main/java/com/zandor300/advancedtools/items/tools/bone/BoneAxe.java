@@ -12,3 +12,4 @@ public class BoneAxe extends ItemAxe {
 		this.setTextureName("advancedtools:boneaxe");
 	}
 }
+

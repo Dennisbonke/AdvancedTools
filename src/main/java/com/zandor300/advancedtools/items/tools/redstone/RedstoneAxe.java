@@ -12,3 +12,4 @@ public class RedstoneAxe extends ItemAxe{
 		this.setTextureName("advancedtools:redstoneaxe");
 	}
 }
+
