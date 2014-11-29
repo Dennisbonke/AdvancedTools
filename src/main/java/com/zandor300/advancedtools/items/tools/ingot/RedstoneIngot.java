@@ -1,13 +1,10 @@
 package com.zandor300.advancedtools.items.tools.ingot;
 
-import net.minecraft.item.Item;
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.items.genericitems.ItemAT;
 
-public class RedstoneIngot extends Item {
+public class RedstoneIngot extends ItemAT {
 
 	public RedstoneIngot(int id) {
-		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName("RedstoneIngot");
-		this.setTextureName("advancedtools:redstoneingot");
 	}
 }

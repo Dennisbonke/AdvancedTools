@@ -1,13 +1,10 @@
 package com.zandor300.advancedtools.items.tools.ingot;
 
-import net.minecraft.item.Item;
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.items.genericitems.ItemAT;
 
-public class BoneIngot extends Item {
+public class BoneIngot extends ItemAT {
 
 	public BoneIngot(int id) {
-		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName("BoneIngot");
-		this.setTextureName("advancedtools:boneingot");
 	}
 }

@@ -1,15 +1,12 @@
 package com.zandor300.advancedtools.items.tools.redstone;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
-import net.minecraft.item.ItemSpade;
+import com.zandor300.advancedtools.items.genericitems.ATItemShovel;
 
-public class RedstoneShovel extends ItemSpade {
+public class RedstoneShovel extends ATItemShovel {
 
 	public RedstoneShovel(int id, ToolMaterial material) {
 		super(material);
-		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName("RedstoneShovel");
-		this.setTextureName("advancedtools:redstoneshovel");
 	}
 }
 

@@ -1,14 +1,11 @@
 package com.zandor300.advancedtools.items.tools.redstone;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
-import net.minecraft.item.ItemPickaxe;
+import com.zandor300.advancedtools.items.genericitems.ATItemPickaxe;
 
-public class RedstonePickaxe extends ItemPickaxe {
+public class RedstonePickaxe extends ATItemPickaxe {
 
 	public RedstonePickaxe(int id, ToolMaterial material) {
 		super(material);
-		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName("RedstonePickaxe");
-		this.setTextureName("advancedtools:redstonepickaxe");
 	}
 }

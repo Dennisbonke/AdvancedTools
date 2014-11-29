@@ -1,14 +1,11 @@
 package com.zandor300.advancedtools.items.tools.emerald;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
-import net.minecraft.item.ItemSword;
+import com.zandor300.advancedtools.items.genericitems.ATItemSword;
 
-public class EmeraldSword extends ItemSword {
+public class EmeraldSword extends ATItemSword {
 
 	public EmeraldSword(int id, ToolMaterial material) {
 		super(material);
-		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName("EmeraldSword");
-		this.setTextureName("advancedtools:emeraldsword");
 	}
 }

@@ -1,14 +1,11 @@
 package com.zandor300.advancedtools.items.tools.redstone;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
-import net.minecraft.item.ItemSword;
+import com.zandor300.advancedtools.items.genericitems.ATItemSword;
 
-public class RedstoneSword extends ItemSword {
+public class RedstoneSword extends ATItemSword {
 
 	public RedstoneSword(int id, ToolMaterial material) {
 		super(material);
-		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName("RedstoneSword");
-		this.setTextureName("advancedtools:redstonesword");
 	}
 }
