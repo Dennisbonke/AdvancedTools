@@ -26,7 +26,7 @@ public class ModItems {
     public static Item boneShovel = new BoneShovel(5006, bone);
     public static Item boneAxe = new BoneAxe(5007, bone);
     public static Item boneSword = new BoneSword(5008, bone);
-    public static Item boneHoe = new BoneHoe(5009, bone);
+    //public static Item boneHoe = new BoneHoe(5009, bone);
 
     public static Item.ToolMaterial redstone = EnumHelper.addToolMaterial(
             "Redstone", 3, 750, 8.0f, 3.0f, 40);
@@ -77,7 +77,7 @@ public class ModItems {
         GameRegistry.registerItem(boneShovel, "Bone Shovel");
         GameRegistry.registerItem(boneAxe, "Bone Axe");
         GameRegistry.registerItem(boneSword, "Bone Sword");
-        GameRegistry.registerItem(boneHoe, "Bone Hoe");
+       // GameRegistry.registerItem(boneHoe, "Bone Hoe");
 
         GameRegistry.registerItem(redstonePickaxe, "Redstone Pickaxe");
         //GameRegistry.registerItem(redstoneShovel, "Redstone Shovel");
