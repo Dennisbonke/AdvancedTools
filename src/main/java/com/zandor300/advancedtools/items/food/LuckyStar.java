@@ -1,15 +1,11 @@
 package com.zandor300.advancedtools.items.food;
 
-import net.minecraft.item.ItemFood;
+import com.zandor300.advancedtools.items.genericitems.ATItemFood;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
-
-public class LuckyStar extends ItemFood {
+public class LuckyStar extends ATItemFood {
 
 	public LuckyStar(int id, int heal, boolean b) {
 		super(id, b);
-		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName("LuckyStar");
-		this.setTextureName("advancedtools:luckystar");
 	}
 }

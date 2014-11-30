@@ -16,8 +16,8 @@ import net.minecraftforge.common.util.EnumHelper;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {
-   // public static Item Strawberry = new Strawberry(3000, 2, true);
-    //public static Item LuckyStar = new LuckyStar(3001, 20, true);
+    public static Item Strawberry = new Strawberry(3000, 2, true);
+    public static Item LuckyStar = new LuckyStar(3001, 20, true);
 
     public static Item.ToolMaterial bone = EnumHelper.addToolMaterial("Bone", 3,
             250, 7.0f, 2.5f, 10);
@@ -56,17 +56,17 @@ public class ModItems {
            "emeraldboots", emeraldArmor, 3);
 
     public static void init() {
-     //   GameRegistry.registerItem(Strawberry, "Strawberry");
-    //    GameRegistry.registerItem(LuckyStar, "Lucky Star");
+        GameRegistry.registerItem(Strawberry, "Strawberry");
+        GameRegistry.registerItem(LuckyStar, "Lucky Star");
 
         GameRegistry.registerItem(boneIngot, "Bone Ingot");
         GameRegistry.registerItem(redstoneIngot, "Redstone Ingot");
 
-       GameRegistry.registerItem(emeraldPickaxe, "Emerald Pickaxe");
-       GameRegistry.registerItem(emeraldShovel, "Emerald Shovel");
-       GameRegistry.registerItem(emeraldAxe, "Emerald Axe");
-       GameRegistry.registerItem(emeraldSword, "Emerald Sword");
-       GameRegistry.registerItem(emeraldHoe, "Emerald Hoe");
+        GameRegistry.registerItem(emeraldPickaxe, "Emerald Pickaxe");
+        GameRegistry.registerItem(emeraldShovel, "Emerald Shovel");
+        GameRegistry.registerItem(emeraldAxe, "Emerald Axe");
+        GameRegistry.registerItem(emeraldSword, "Emerald Sword");
+        GameRegistry.registerItem(emeraldHoe, "Emerald Hoe");
 
         GameRegistry.registerItem(emeraldHelmet, "Emerald Helmet");
         GameRegistry.registerItem(emeraldChestplate, "Emerald Chestplate");
@@ -77,7 +77,7 @@ public class ModItems {
         GameRegistry.registerItem(boneShovel, "Bone Shovel");
         GameRegistry.registerItem(boneAxe, "Bone Axe");
         GameRegistry.registerItem(boneSword, "Bone Sword");
-       // GameRegistry.registerItem(boneHoe, "Bone Hoe");
+        //GameRegistry.registerItem(boneHoe, "Bone Hoe");
 
         GameRegistry.registerItem(redstonePickaxe, "Redstone Pickaxe");
         //GameRegistry.registerItem(redstoneShovel, "Redstone Shovel");
