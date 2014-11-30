@@ -1,3 +1,7 @@
+version 0.1.5:
+armour is localized and enabled
+texture bug for all the items is fixed
+
 version 0.1.4[AS]:
 changed version number, it now means major.minor.revision[state[A = alpha, B = beta, R = release, stable = S]
 disabled the blocks and the non localized / texture missing items.
