@@ -10,7 +10,7 @@ public class CreativeTabAT {
 	public static final CreativeTabs tab = new CreativeTabs(Reference.MOD_ID) {
 		@Override
 		public Item getTabIconItem() {
-			return ModItems.emeraldSword;
+			return ModItems.redstonePickaxe;
 		}
 
 		@Override
