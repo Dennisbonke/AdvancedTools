@@ -31,7 +31,7 @@ public class ModItems {
     public static Item boneShovel = new BoneShovel(5006, bone);
     public static Item boneAxe = new BoneAxe(5007, bone);
     public static Item boneSword = new BoneSword(5008, bone);
-    //public static Item boneHoe = new BoneHoe(5009, bone);
+    public static Item boneHoe = new BoneHoe(5009, bone);
     //public static Item boneHelmet = new BoneArmor("BoneHelmet",
     //        "bonehelmet", boneArmor, 0);
     //public static Item boneChestplate = new BoneArmor("BoneChestplate",
@@ -48,10 +48,10 @@ public class ModItems {
             "Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
     public static Item redstoneIngot = new RedstoneIngot(4001);
     public static Item redstonePickaxe = new RedstonePickaxe(5010, redstone);
-    //public static Item redstoneShovel = new RedstoneShovel(5011, redstone);
-    //public static Item redstoneAxe = new RedstoneAxe(5012, redstone);
-    //public static Item redstoneSword = new RedstoneSword(5013, redstone);
-    //public static Item redstoneHoe = new RedstoneHoe(5014, redstone);
+    public static Item redstoneShovel = new RedstoneShovel(5011, redstone);
+    public static Item redstoneAxe = new RedstoneAxe(5012, redstone);
+    public static Item redstoneSword = new RedstoneSword(5013, redstone);
+    public static Item redstoneHoe = new RedstoneHoe(5014, redstone);
     //public static Item redstoneHelmet = new RedstoneArmor("RedstoneHelmet",
     //        "redstonehelmet", redstoneArmor, 0);
     //public static Item redstoneChestplate = new RedstoneArmor("RedstoneChestplate",
