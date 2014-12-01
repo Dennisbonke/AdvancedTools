@@ -5,9 +5,12 @@ import com.zandor300.advancedtools.items.food.LuckyStar;
 import com.zandor300.advancedtools.items.food.Strawberry;
 import com.zandor300.advancedtools.items.tools.bone.*;
 import com.zandor300.advancedtools.items.tools.emerald.*;
+import com.zandor300.advancedtools.items.tools.enderion.*;
 import com.zandor300.advancedtools.items.tools.ingot.BoneIngot;
 import com.zandor300.advancedtools.items.tools.ingot.EnderionIngot;
+import com.zandor300.advancedtools.items.tools.ingot.LapisIngot;
 import com.zandor300.advancedtools.items.tools.ingot.RedstoneIngot;
+import com.zandor300.advancedtools.items.tools.lapis.*;
 import com.zandor300.advancedtools.items.tools.redstone.*;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -86,19 +89,29 @@ public class ModItems {
     public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial(
             "Enderion", 40, new int[] { 4, 7, 5, 4 }, 25);
     public static Item enderionIngot = new EnderionIngot(6000);
-    //public static Item enderionPickaxe = new EnderionPickaxe(6001, enderion);
-    //public static Item enderionShovel = new EnderionShovel(6002, enderion);
-    //public static Item enderionAxe = new EnderionAxe(6003, enderion);
-    //public static Item enderionSword = new EnderionSword(6004, enderion);
-    //public static Item enderionHoe = new EnderionHoe(6005, enderion);
+    public static Item enderionPickaxe = new EnderionPickaxe(6001, enderion);
+    public static Item enderionShovel = new EnderionShovel(6002, enderion);
+    public static Item enderionAxe = new EnderionAxe(6003, enderion);
+    public static Item enderionSword = new EnderionSword(6004, enderion);
+    public static Item enderionHoe = new EnderionHoe(6005, enderion);
     //public static Item enderionHelmet = new EnderionArmor("EnderionHelmet",
     //        "enderionhelmet", enderionArmor, 0);
     //public static Item enderionChestplate = new EnderionArmor("EnderionChestplate",
     //        "enderionchestplate", enderionArmor, 1);
-    //public static Item enderionLeggings = new EnerionArmor("EnderionLeggings",
+    //public static Item enderionLeggings = new EnderionArmor("EnderionLeggings",
     //        "enderionleggings", enderionArmor, 2);
     //public static Item enderionnBoots = new EnderionArmor("EnderionBoots",
     //        "enderionboots", enderionArmor, 3);
+
+    // Lapis
+    public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 5, 1600, 9.5f, 5.0f, 30);
+    public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 35, new int[] { 3, 6, 4, 3 }, 23);
+    public static Item lapisIngot = new LapisIngot(7000);
+    public static Item lapisPickaxe = new LapisPickaxe(7001, lapis);
+    public static Item lapisShovel = new LapisShovel(7002, lapis);
+    public static Item lapisAxe = new LapisAxe(7003, lapis);
+    public static Item lapisSword = new LapisSword(7004, lapis);
+    public static Item lapisHoe = new LapisHoe(7005, lapis);
 
     public static void init() {
 
@@ -110,6 +123,7 @@ public class ModItems {
         GameRegistry.registerItem(boneIngot, "Bone Ingot");
         GameRegistry.registerItem(redstoneIngot, "Redstone Ingot");
         GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
+        GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
 
         // Tools
         // Emerald
@@ -121,20 +135,24 @@ public class ModItems {
 
         // Redstone
         GameRegistry.registerItem(redstonePickaxe, "Redstone Pickaxe");
-        //GameRegistry.registerItem(redstoneShovel, "Redstone Shovel");
-        //GameRegistry.registerItem(redstoneAxe, "Redstone Axe");
-        //GameRegistry.registerItem(redstoneSword, "Redstone Sword");
-        //GameRegistry.registerItem(redstoneHoe, "Redstone Hoe");
+        GameRegistry.registerItem(redstoneShovel, "Redstone Shovel");
+        GameRegistry.registerItem(redstoneAxe, "Redstone Axe");
+        GameRegistry.registerItem(redstoneSword, "Redstone Sword");
+        GameRegistry.registerItem(redstoneHoe, "Redstone Hoe");
 
         // Bone
         GameRegistry.registerItem(bonePickaxe, "Bone Pickaxe");
         GameRegistry.registerItem(boneShovel, "Bone Shovel");
         GameRegistry.registerItem(boneAxe, "Bone Axe");
         GameRegistry.registerItem(boneSword, "Bone Sword");
-        //GameRegistry.registerItem(boneHoe, "Bone Hoe");
+        GameRegistry.registerItem(boneHoe, "Bone Hoe");
 
         // Enderion
-
+        GameRegistry.registerItem(enderionPickaxe, "Enderion Pickaxe");
+        GameRegistry.registerItem(enderionShovel, "Enderion Shovel");
+        GameRegistry.registerItem(enderionAxe, "Enderion Axe");
+        GameRegistry.registerItem(enderionSword, "Enderion Sword");
+        GameRegistry.registerItem(enderionHoe, "Enderion Hoe");
 
         // Armor
         // Emerald
