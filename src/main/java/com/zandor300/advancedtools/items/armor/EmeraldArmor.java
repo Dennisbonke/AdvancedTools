@@ -8,9 +8,9 @@ import net.minecraft.item.ItemStack;
 
 import com.zandor300.advancedtools.creativetab.CreativeTabAT;
 
-public class ArmorItem extends ATItemArmor {
+public class EmeraldArmor extends ATItemArmor {
 
-	public ArmorItem(String name, String texture, ArmorMaterial material, int j) {
+	public EmeraldArmor(String name, String texture, ArmorMaterial material, int j) {
 		super(material, j, j);
 		this.setCreativeTab(CreativeTabAT.tab);
 		this.setUnlocalizedName(name);
