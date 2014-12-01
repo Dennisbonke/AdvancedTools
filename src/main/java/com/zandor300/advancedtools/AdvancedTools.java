@@ -32,10 +32,12 @@ public class AdvancedTools {
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
-		Proxy.registerRenderInfo();
+		//Render Info
+		//Proxy.registerRenderInfo();
 
-		registerEntity(FrankensteinMob.class, "Frankenstein", 0xeaeae9,
-				0xc99a03);
+		// Register Entity
+		//registerEntity(FrankensteinMob.class, "Frankenstein", 0xeaeae9,
+		//		0xc99a03);
 
        	// ModBlocks.init();
 
@@ -45,8 +47,8 @@ public class AdvancedTools {
 
         LogHelper.info("Pre Initialization Complete!");
 	}
-
-	private static void registerEntity(Class<? extends Entity> class1,
+	// register Frankenstein Mob
+	/*private static void registerEntity(Class<? extends Entity> class1,
 			String entityName, int bkEggColor, int fgEggColor) {
 		int id = EntityRegistry.findGlobalUniqueEntityId();
 
@@ -62,7 +64,7 @@ public class AdvancedTools {
 					EnumCreatureType.creature, biomes);
 	}
 
-	@EventHandler
+	*/@EventHandler
 	public static void Init(FMLInitializationEvent event) {
 
         LogHelper.info("Initialization Complete!");
@@ -70,6 +72,7 @@ public class AdvancedTools {
 
 	@EventHandler
 	public static void PostInit(FMLPostInitializationEvent event) {
+
         LogHelper.info("Post Initialization Complete!");
 	}
 }
