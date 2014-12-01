@@ -31,7 +31,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.bonePickaxe), "bbb", " s ", " s ", "b", "ingotBone", "s", "stickWood"));
 
         // Ingots
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneIngot), "rrr", "rir ", "rrr", "r", "dustRedstone", "i", "ingotIron"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneIngot), "rrr", "rir", "rrr", "r", "dustRedstone", "i", "ingotIron"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.boneIngot), "bbb", "bib", "bbb", "b", "dyeWhite", "i", "ingotIron"));
     }
 }

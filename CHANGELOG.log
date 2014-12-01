@@ -1,3 +1,10 @@
+version 0.2.0:
+added recipes
+fixed mcmod.info
+re-enabled luckystar and strawberry item
+oredictionary stuff
+added NBTHelper
+
 version 0.1.5:
 armour is localized and enabled
 texture bug for all the items is fixed
