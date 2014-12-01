@@ -1,7 +1,8 @@
 package com.zandor300.advancedtools;
 
-//import com.zandor300.advancedtools.init.ModBlocks;
+import com.zandor300.advancedtools.init.ModBlocks;
 import com.zandor300.advancedtools.init.ModItems;
+import com.zandor300.advancedtools.init.Recipes;
 import com.zandor300.advancedtools.reference.Reference;
 import com.zandor300.advancedtools.utilities.LogHelper;
 import net.minecraft.entity.Entity;
@@ -40,6 +41,8 @@ public class AdvancedTools {
 
         ModItems.init();
 
+		Recipes.init();
+
         LogHelper.info("Pre Initialization Complete!");
 	}
 
@@ -67,6 +70,6 @@ public class AdvancedTools {
 
 	@EventHandler
 	public static void PostInit(FMLPostInitializationEvent event) {
-        LogHelper.info("Post Initiaalization Complete!");
+        LogHelper.info("Post Initialization Complete!");
 	}
 }
