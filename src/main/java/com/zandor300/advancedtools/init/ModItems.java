@@ -6,6 +6,7 @@ import com.zandor300.advancedtools.items.food.Strawberry;
 import com.zandor300.advancedtools.items.tools.bone.*;
 import com.zandor300.advancedtools.items.tools.emerald.*;
 import com.zandor300.advancedtools.items.tools.ingot.BoneIngot;
+import com.zandor300.advancedtools.items.tools.ingot.EnderionIngot;
 import com.zandor300.advancedtools.items.tools.ingot.RedstoneIngot;
 import com.zandor300.advancedtools.items.tools.redstone.*;
 import com.zandor300.advancedtools.reference.Reference;
@@ -80,15 +81,16 @@ public class ModItems {
            "emeraldboots", emeraldArmor, 3);
 
     // Enderion
-    //public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion",
-    //        3, 1500, 10.0f, 4.0f, 22);
-    //public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial(
-    //        "Enderion", 40, new int[] { 4, 7, 5, 4 }, 25);
-    //public static Item enderionPickaxe = new EnderionPickaxe(5000, enderion);
-    //public static Item enderionShovel = new EnderionShovel(5001, enderion);
-    //public static Item enderionAxe = new EnderionAxe(5002, enderion);
-    //public static Item enderionSword = new EnderionSword(5003, enderion);
-    //public static Item enderionHoe = new EnderionHoe(5004, enderion);
+    public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion",
+            3, 1500, 10.0f, 4.0f, 22);
+    public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial(
+            "Enderion", 40, new int[] { 4, 7, 5, 4 }, 25);
+    public static Item enderionIngot = new EnderionIngot(6000);
+    //public static Item enderionPickaxe = new EnderionPickaxe(6001, enderion);
+    //public static Item enderionShovel = new EnderionShovel(6002, enderion);
+    //public static Item enderionAxe = new EnderionAxe(6003, enderion);
+    //public static Item enderionSword = new EnderionSword(6004, enderion);
+    //public static Item enderionHoe = new EnderionHoe(6005, enderion);
     //public static Item enderionHelmet = new EnderionArmor("EnderionHelmet",
     //        "enderionhelmet", enderionArmor, 0);
     //public static Item enderionChestplate = new EnderionArmor("EnderionChestplate",
@@ -107,7 +109,7 @@ public class ModItems {
         // Ingots
         GameRegistry.registerItem(boneIngot, "Bone Ingot");
         GameRegistry.registerItem(redstoneIngot, "Redstone Ingot");
-        //GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
+        GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
 
         // Tools
         // Emerald
