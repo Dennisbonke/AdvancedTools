@@ -24,6 +24,9 @@ item.advancedtools:RedstoneHoe.name=Redstone Hoe
 item.advancedtools:RedstoneShovel.name=Redstone Shovel
 item.advancedtools:RedstoneSword.name=Redstone Sword
 
+// Enderion
+
+
 // Ingots
 item.advancedtools:BoneIngot.name=Bone Ingot
 item.advancedtools:RedstoneIngot.name=Redstone Ingot
@@ -46,6 +49,9 @@ item.advancedtools:BoneHelmet.name=Bone Helmet
 item.advancedtools:BoneChestplate.name=Bone Chestplate
 item.advancedtools:BoneLeggings.name=Bone Leggings
 item.advancedtools:BoneBoots.name=Bone Boots
+
+// Enderion
+
 
 // Blocks
 tile.advancedtools:StrawberryCrop.name=Strawberry Crop

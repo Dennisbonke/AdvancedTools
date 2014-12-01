@@ -23,8 +23,8 @@ public class ModItems {
     // Bone
     public static Item.ToolMaterial bone = EnumHelper.addToolMaterial("Bone", 1,
             450, 7.0f, 1.5f, 10);
-    //public static ItemArmor.ArmorMaterial boneArmor = EnumHelper.addArmorMaterial(
-    //        "Bone", 5, new int[] { 1, 2, 1, 1 }, 15);
+    public static ItemArmor.ArmorMaterial boneArmor = EnumHelper.addArmorMaterial(
+            "Bone", 5, new int[] { 1, 2, 1, 1 }, 15);
     public static Item boneIngot = new BoneIngot(4000);
     public static Item bonePickaxe = new BonePickaxe(5005, bone);
     public static Item boneShovel = new BoneShovel(5006, bone);
@@ -43,8 +43,8 @@ public class ModItems {
     // Redstone
     public static Item.ToolMaterial redstone = EnumHelper.addToolMaterial(
             "Redstone", 2, 750, 8.0f, 2.5f, 30);
-    //public static ItemArmor.ArmorMaterial redstoneArmor = EnumHelper.addArmorMaterial(
-    //        "Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
+    public static ItemArmor.ArmorMaterial redstoneArmor = EnumHelper.addArmorMaterial(
+            "Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
     public static Item redstoneIngot = new RedstoneIngot(4001);
     public static Item redstonePickaxe = new RedstonePickaxe(5010, redstone);
     //public static Item redstoneShovel = new RedstoneShovel(5011, redstone);
@@ -79,15 +79,35 @@ public class ModItems {
     public static Item emeraldBoots = new EmeraldArmor("EmeraldBoots",
            "emeraldboots", emeraldArmor, 3);
 
-    public static void init() {
-        // Food
+    // Enderion
+    //public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion",
+    //        3, 1500, 10.0f, 4.0f, 22);
+    //public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial(
+    //        "Enderion", 40, new int[] { 4, 7, 5, 4 }, 25);
+    //public static Item enderionPickaxe = new EnderionPickaxe(5000, enderion);
+    //public static Item enderionShovel = new EnderionShovel(5001, enderion);
+    //public static Item enderionAxe = new EnderionAxe(5002, enderion);
+    //public static Item enderionSword = new EnderionSword(5003, enderion);
+    //public static Item enderionHoe = new EnderionHoe(5004, enderion);
+    //public static Item enderionHelmet = new EnderionArmor("EnderionHelmet",
+    //        "enderionhelmet", enderionArmor, 0);
+    //public static Item enderionChestplate = new EnderionArmor("EnderionChestplate",
+    //        "enderionchestplate", enderionArmor, 1);
+    //public static Item enderionLeggings = new EnerionArmor("EnderionLeggings",
+    //        "enderionleggings", enderionArmor, 2);
+    //public static Item enderionnBoots = new EnderionArmor("EnderionBoots",
+    //        "enderionboots", enderionArmor, 3);
 
+    public static void init() {
+
+        // Food
         GameRegistry.registerItem(Strawberry, "Strawberry");
         GameRegistry.registerItem(LuckyStar, "Lucky Star");
 
         // Ingots
         GameRegistry.registerItem(boneIngot, "Bone Ingot");
         GameRegistry.registerItem(redstoneIngot, "Redstone Ingot");
+        //GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
 
         // Tools
         // Emerald
@@ -111,6 +131,9 @@ public class ModItems {
         GameRegistry.registerItem(boneSword, "Bone Sword");
         //GameRegistry.registerItem(boneHoe, "Bone Hoe");
 
+        // Enderion
+
+
         // Armor
         // Emerald
         GameRegistry.registerItem(emeraldHelmet, "Emerald Helmet");
@@ -129,5 +152,8 @@ public class ModItems {
         //GameRegistry.registerItem(boneChestplate, "Bone Chestplate");
         //GameRegistry.registerItem(boneLeggings, "Bone Leggings");
         //GameRegistry.registerItem(boneBoots, "Bone Boots");
+
+        // Enderion
+
     }
 }
