@@ -25,10 +25,10 @@ public class Recipes {
 
         // Redstone
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstonePickaxe), "rrr", " s ", " s ", 'r', "ingotRedstone", 's', "stickWood"));
-        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneAxe), "rr ", "rs ", " s ", "r", "ingotRedstone", 's', "stickWood"));
-        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneShovel), "r", "s", "s", "r", "ingotRedstone", 's', "stickWood"));
-        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneSword), "r", "r", "s", "r", "ingotRedstone", 's', "stickWood"));
-        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneHoe), "rr", " s ", " s ", "ingotRedstone", 's', "stickWood"));
+        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneAxe), "rr ", "rs ", " s ", 'r', "ingotRedstone", 's', "stickWood"));
+        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneShovel), "r", "s", "s", 'r', "ingotRedstone", 's', "stickWood"));
+        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneSword), "r", "r", "s", 'r', "ingotRedstone", 's', "stickWood"));
+        //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneHoe), "rr", " s ", " s ", 'r', "ingotRedstone", 's', "stickWood"));
 
         // Bone
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.boneAxe), "bb ", "bs ", " s ", 'b', "ingotBone", 's', "stickWood"));
