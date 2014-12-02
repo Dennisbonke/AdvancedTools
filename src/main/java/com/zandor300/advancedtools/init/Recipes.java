@@ -56,6 +56,10 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.enderionPickaxe), "eee", " s ", " s ", 'e', "ingotEnderion", 's', "stickWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.enderionHoe), "ee ", " s ", " s ", 'e', "ingotEnderion", 's', "stickWood"));
 
+        // Lapis
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisSword), " l ", " l ", " s ", 'l', "gemLapis", 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisHoe), "ll ", " s ", " s ", 'l', "gemLapis", 's', "stickWood"));
+
         // Ingots
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneIngot), "rrr", "rir", "rrr", 'r', "dustRedstone", 'i', "ingotIron"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.boneIngot), "bbb", "bib", "bbb", 'b', "dyeWhite", 'i', "ingotIron"));
