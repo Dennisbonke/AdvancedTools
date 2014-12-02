@@ -44,10 +44,10 @@ public class ModItems {
    // public static ItemArmor.ArmorMaterial redstoneArmor = EnumHelper.addArmorMaterial("Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
     public static Item redstoneIngot = new RedstoneIngot(4001);
     public static Item redstonePickaxe = new RedstonePickaxe(5010, redstone);
-    //public static Item redstoneShovel = new RedstoneShovel(5011, redstone);
-    //public static Item redstoneAxe = new RedstoneAxe(5012, redstone);
-    //public static Item redstoneSword = new RedstoneSword(5013, redstone);
-    //public static Item redstoneHoe = new RedstoneHoe(5014, redstone);
+    public static Item redstoneShovel = new RedstoneShovel(5011, redstone);
+    public static Item redstoneAxe = new RedstoneAxe(5012, redstone);
+    public static Item redstoneSword = new RedstoneSword(5013, redstone);
+    public static Item redstoneHoe = new RedstoneHoe(5014, redstone);
     //public static Item redstoneHelmet = new RedstoneArmor("RedstoneHelmet", "redstonehelmet", redstoneArmor, 0);
     //public static Item redstoneChestplate = new RedstoneArmor("RedstoneChestplate", "redstonechestplate", redstoneArmor, 1);
     //public static Item redstoneLeggings = new RedstoneArmor("RedstoneLeggings", "redstoneleggings", redstoneArmor, 2);
@@ -147,10 +147,10 @@ public class ModItems {
 
         // Redstone
         GameRegistry.registerItem(redstonePickaxe, "Redstone Pickaxe");
-        //GameRegistry.registerItem(redstoneShovel, "Redstone Shovel");
-        //GameRegistry.registerItem(redstoneAxe, "Redstone Axe");
-        //GameRegistry.registerItem(redstoneSword, "Redstone Sword");
-        //GameRegistry.registerItem(redstoneHoe, "Redstone Hoe");
+        GameRegistry.registerItem(redstoneShovel, "Redstone Shovel");
+        GameRegistry.registerItem(redstoneAxe, "Redstone Axe");
+        GameRegistry.registerItem(redstoneSword, "Redstone Sword");
+        GameRegistry.registerItem(redstoneHoe, "Redstone Hoe");
 
         // Bone
         GameRegistry.registerItem(bonePickaxe, "Bone Pickaxe");
