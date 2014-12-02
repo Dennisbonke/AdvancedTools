@@ -1,6 +1,6 @@
 package com.zandor300.advancedtools.items.genericitems;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.creativetab.CreativeTabATCombat;
 import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 public class ATItemArmor extends ItemArmor{
     public ATItemArmor(ArmorMaterial material, int j, int j1) {
         super(material, j, j);
-        this.setCreativeTab(CreativeTabAT.tab);
+        this.setCreativeTab(CreativeTabATCombat.tab);
     }
     @Override
     public String getUnlocalizedName()

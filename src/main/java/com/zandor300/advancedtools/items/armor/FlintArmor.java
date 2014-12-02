@@ -1,6 +1,6 @@
 package com.zandor300.advancedtools.items.armor;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.creativetab.CreativeTabATTools;
 import com.zandor300.advancedtools.items.genericitems.ATItemArmor;
 import com.zandor300.advancedtools.reference.Reference;
 
@@ -10,7 +10,7 @@ import com.zandor300.advancedtools.reference.Reference;
 public class FlintArmor extends ATItemArmor {
     public FlintArmor(String name, String texture, ArmorMaterial material, int j) {
         super(material, j, j);
-        this.setCreativeTab(CreativeTabAT.tab);
+        this.setCreativeTab(CreativeTabATTools.tab);
         this.setUnlocalizedName(name);
         this.setTextureName(Reference.MOD_ID + ":" + texture);
     }

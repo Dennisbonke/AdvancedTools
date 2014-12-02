@@ -103,7 +103,7 @@ item.advancedtools:netherionChestplate.name=Netherion Chestplate
 item.advancedtools:netherionLeggings.name=Netherion Leggings
 item.advancedtools:netherionBoots.name=Netherion Boots
 
-// Nugget
+// Nuggets
 item.advancedtools:EmeraldNugget.name=Emerald Nugget
 item.advancedtools:RedstoneNugget.name=Redstone Nugget
 item.advancedtools:BoneNugget.name=Bone Nugget

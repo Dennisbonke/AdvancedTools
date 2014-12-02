@@ -1,6 +1,6 @@
 package com.zandor300.advancedtools.items.genericitems;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.creativetab.CreativeTabATMaterials;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,7 +12,7 @@ public class ItemAT extends Item {
     public ItemAT()
     {
         super();
-        this.setCreativeTab(CreativeTabAT.tab);
+        this.setCreativeTab(CreativeTabATMaterials.tab);
     }
     @Override
     public String getUnlocalizedName()

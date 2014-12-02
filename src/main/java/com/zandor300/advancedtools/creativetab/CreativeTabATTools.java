@@ -5,7 +5,7 @@ import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class CreativeTabAT {
+public class CreativeTabATTools {
 
 	public static final CreativeTabs tab = new CreativeTabs(Reference.MOD_ID) {
 		@Override
@@ -15,7 +15,7 @@ public class CreativeTabAT {
 
 		@Override
 		public String getTranslatedTabLabel() {
-			return Reference.MOD_NAME;
+			return "Advanced Tools:Tools";
 		}
 	};
 }

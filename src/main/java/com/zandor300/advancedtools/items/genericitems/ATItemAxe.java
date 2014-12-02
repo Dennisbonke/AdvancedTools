@@ -1,6 +1,6 @@
 package com.zandor300.advancedtools.items.genericitems;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.creativetab.CreativeTabATTools;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -11,7 +11,7 @@ import net.minecraft.item.ItemStack;
 public class ATItemAxe extends ItemAxe {
        public ATItemAxe(ToolMaterial material) {
         super(material);
-           this.setCreativeTab(CreativeTabAT.tab);
+           this.setCreativeTab(CreativeTabATTools.tab);
     }
     @Override
     public String getUnlocalizedName()

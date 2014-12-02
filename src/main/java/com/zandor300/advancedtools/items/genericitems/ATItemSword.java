@@ -1,6 +1,6 @@
 package com.zandor300.advancedtools.items.genericitems;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.creativetab.CreativeTabATCombat;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -11,7 +11,7 @@ import net.minecraft.item.ItemSword;
 public class ATItemSword extends ItemSword {
     public ATItemSword(ToolMaterial material) {
         super(material);
-        this.setCreativeTab(CreativeTabAT.tab);
+        this.setCreativeTab(CreativeTabATCombat.tab);
     }
     @Override
     public String getUnlocalizedName()

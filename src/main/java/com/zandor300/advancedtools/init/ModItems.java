@@ -28,7 +28,7 @@ public class ModItems {
     public static Item.ToolMaterial bone = EnumHelper.addToolMaterial("Bone", 1, 450, 7.0f, 1.5f, 10);
     public static ItemArmor.ArmorMaterial boneArmor = EnumHelper.addArmorMaterial("Bone", 5, new int[]{1, 2, 1, 1}, 15);
     public static Item boneIngot = new BoneIngot(4000);
-    public static Item boneNugget = new BoneNugget(4010);
+    //public static Item boneNugget = new BoneNugget(4010);
     public static Item bonePickaxe = new BonePickaxe(5005, bone);
     public static Item boneShovel = new BoneShovel(5006, bone);
     public static Item boneAxe = new BoneAxe(5007, bone);
@@ -44,7 +44,7 @@ public class ModItems {
     public static Item.ToolMaterial redstone = EnumHelper.addToolMaterial("Redstone", 2, 750, 8.0f, 2.5f, 30);
     public static ItemArmor.ArmorMaterial redstoneArmor = EnumHelper.addArmorMaterial("Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
     public static Item redstoneIngot = new RedstoneIngot(4001);
-    public static Item redstoneNugget = new RedstoneNugget(4015);
+    //public static Item redstoneNugget = new RedstoneNugget(4015);
     public static Item redstonePickaxe = new RedstonePickaxe(5010, redstone);
     public static Item redstoneShovel = new RedstoneShovel(5011, redstone);
     public static Item redstoneAxe = new RedstoneAxe(5012, redstone);
@@ -59,7 +59,7 @@ public class ModItems {
     // TODO: Playtest material values.
     public static Item.ToolMaterial emerald = EnumHelper.addToolMaterial("Emerald", 3, 1500, 10.0f, 4.0f, 22);
     public static ItemArmor.ArmorMaterial emeraldArmor = EnumHelper.addArmorMaterial("Emerald", 30, new int[] { 4, 7, 5, 4 }, 25);
-    public static Item emeraldNugget = new EmeraldNugget(5000);
+    //public static Item emeraldNugget = new EmeraldNugget(5000);
     public static Item emeraldPickaxe = new EmeraldPickaxe(5000, emerald);
     public static Item emeraldShovel = new EmeraldShovel(5001, emerald);
     public static Item emeraldAxe = new EmeraldAxe(5002, emerald);
@@ -91,7 +91,7 @@ public class ModItems {
     public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 3, 600, 7.5f, 3.0f, 20);
     public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 25, new int[] { 3, 6, 5, 3 }, 25);
     public static Item lapisIngot = new LapisIngot(7000);
-    public static Item lapisNugget = new LapisNugget(7006);
+    //public static Item lapisNugget = new LapisNugget(7006);
     //public static Item lapisPickaxe = new LapisPickaxe(7001, lapis);
     //public static Item lapisShovel = new LapisShovel(7002, lapis);
     //public static Item lapisAxe = new LapisAxe(7003, lapis);
@@ -104,10 +104,10 @@ public class ModItems {
 
     // Flint
     // TODO: Change Tool and Armor material values to fit Flint.
-    public static Item.ToolMaterial flint = EnumHelper.addToolMaterial("Flint", 2, 400, 6.5f, 3.0f, 15);
-    public static ItemArmor.ArmorMaterial flintArmor = EnumHelper.addArmorMaterial("Flint", 22, new int[] { 2, 5, 3, 2 }, 13);
-    public static Item flintIngot = new FlintIngot(8000);
-    public static Item flintNugget = new FlintNugget(8006);
+    //public static Item.ToolMaterial flint = EnumHelper.addToolMaterial("Flint", 2, 400, 6.5f, 3.0f, 15);
+    //public static ItemArmor.ArmorMaterial flintArmor = EnumHelper.addArmorMaterial("Flint", 22, new int[] { 2, 5, 3, 2 }, 13);
+    //public static Item flintIngot = new FlintIngot(8000);
+    //public static Item flintNugget = new FlintNugget(8006);
     //public static Item flintPickaxe = new FlintPickaxe(8001, flint);
     //public static Item flintShovel = new FlintShovel(8002, flint);
     //public static Item flintAxe = new FlintAxe(8003, flint);
@@ -120,19 +120,19 @@ public class ModItems {
 
     // Netherion
     // TODO: Change Tool and Armor material values to fit Netherion.
-    public static Item.ToolMaterial netherion = EnumHelper.addToolMaterial("Netherion", 2, 400, 6.5f, 3.0f, 15);
-    public static ItemArmor.ArmorMaterial netherionArmor = EnumHelper.addArmorMaterial("Netherion", 22, new int[] { 2, 5, 3, 2 }, 13);
-    public static Item netherionIngot = new NetherionIngot(9000);
-    public static Item netherionNugget = new NetherionNugget(9001);
-    public static Item netherionPickaxe = new NetherionPickaxe(9002, netherion);
-    public static Item netherionShovel = new NetherionShovel(9002, netherion);
-    public static Item netherionAxe = new NetherionAxe(9003, netherion);
-    public static Item netherionSword = new NetherionSword(9004, netherion);
-    public static Item netherionHoe = new NetherionHoe(9005, netherion);
-    public static Item netherionHelmet = new NetherionArmor("netherionHelmet", "netherionhelmet", flintArmor, 0);
-    public static Item netherionChestPlate = new NetherionArmor("netherionChestplate", "netherionchestplate", netherionArmor, 1);
-    public static Item netherionLeggings = new NetherionArmor("netherionLeggings", "netherionleggings", netherionArmor, 2);
-    public static Item netherionBoots = new NetherionArmor("netherionBoots", "netherionboots", netherionArmor, 3);
+    //public static Item.ToolMaterial netherion = EnumHelper.addToolMaterial("Netherion", 2, 400, 6.5f, 3.0f, 15);
+    //public static ItemArmor.ArmorMaterial netherionArmor = EnumHelper.addArmorMaterial("Netherion", 22, new int[] { 2, 5, 3, 2 }, 13);
+    //public static Item netherionIngot = new NetherionIngot(9000);
+    //public static Item netherionNugget = new NetherionNugget(9001);
+    //public static Item netherionPickaxe = new NetherionPickaxe(9002, netherion);
+    //public static Item netherionShovel = new NetherionShovel(9002, netherion);
+    //public static Item netherionAxe = new NetherionAxe(9003, netherion);
+    //public static Item netherionSword = new NetherionSword(9004, netherion);
+    //public static Item netherionHoe = new NetherionHoe(9005, netherion);
+    //public static Item netherionHelmet = new NetherionArmor("netherionHelmet", "netherionhelmet", flintArmor, 0);
+    //public static Item netherionChestPlate = new NetherionArmor("netherionChestplate", "netherionchestplate", netherionArmor, 1);
+    //public static Item netherionLeggings = new NetherionArmor("netherionLeggings", "netherionleggings", netherionArmor, 2);
+    //public static Item netherionBoots = new NetherionArmor("netherionBoots", "netherionboots", netherionArmor, 3);
 
     public static void init() {
 
@@ -146,16 +146,16 @@ public class ModItems {
         GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
         GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
         //GameRegistry.registerItem(flintIngot, "Flint Ingot");
-        GameRegistry.registerItem(netherionIngot, "Netherion Ingot");
+        //GameRegistry.registerItem(netherionIngot, "Netherion Ingot");
 
         // Nuggets
-        GameRegistry.registerItem(emeraldNugget, "Emerald Nugget");
-        GameRegistry.registerItem(redstoneNugget, "Redstone Nugget");
-        GameRegistry.registerItem(boneNugget, "Bone Nugget");
+        //GameRegistry.registerItem(emeraldNugget, "Emerald Nugget");
+        //GameRegistry.registerItem(redstoneNugget, "Redstone Nugget");
+        //GameRegistry.registerItem(boneNugget, "Bone Nugget");
         GameRegistry.registerItem(enderionNugget, "Enderion Nugget");
-        GameRegistry.registerItem(lapisNugget, "Lapis Nugget");
-        GameRegistry.registerItem(flintNugget, "Flint Nugget");
-        GameRegistry.registerItem(netherionNugget, "Netherion Nugget");
+        //GameRegistry.registerItem(lapisNugget, "Lapis Nugget");
+        //GameRegistry.registerItem(flintNugget, "Flint Nugget");
+        //GameRegistry.registerItem(netherionNugget, "Netherion Nugget");
 
         // Tools
         // Emerald
@@ -201,11 +201,11 @@ public class ModItems {
         //GameRegistry.registerItem(flintHoe, "Flint Hoe");
 
         // Netherion
-        GameRegistry.registerItem(netherionPickaxe, "Netherion Pickaxe");
-        GameRegistry.registerItem(netherionShovel, "Netherion Shovel");
-        GameRegistry.registerItem(netherionAxe, "Netherion Axe");
-        GameRegistry.registerItem(netherionSword, "Netherion Sword");
-        GameRegistry.registerItem(netherionHoe, "Netherion Hoe");
+        //GameRegistry.registerItem(netherionPickaxe, "Netherion Pickaxe");
+        //GameRegistry.registerItem(netherionShovel, "Netherion Shovel");
+        //GameRegistry.registerItem(netherionAxe, "Netherion Axe");
+        //GameRegistry.registerItem(netherionSword, "Netherion Sword");
+        //GameRegistry.registerItem(netherionHoe, "Netherion Hoe");
 
         // Armor
         // Emerald
@@ -245,9 +245,9 @@ public class ModItems {
         //GameRegistry.registerItem(flintBoots, "Flint Boots");
 
         // Netherion
-        GameRegistry.registerItem(netherionHelmet, "Netherion Helmet");
-        GameRegistry.registerItem(netherionChestPlate, "Netherion Chestplate");
-        GameRegistry.registerItem(netherionLeggings, "Netherion Leggings");
-        GameRegistry.registerItem(netherionBoots, "Netherion Boots");
+        //GameRegistry.registerItem(netherionHelmet, "Netherion Helmet");
+        //GameRegistry.registerItem(netherionChestPlate, "Netherion Chestplate");
+        //GameRegistry.registerItem(netherionLeggings, "Netherion Leggings");
+        //GameRegistry.registerItem(netherionBoots, "Netherion Boots");
     }
 }

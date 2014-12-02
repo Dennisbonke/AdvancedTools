@@ -1,6 +1,6 @@
 package com.zandor300.advancedtools.items.genericitems;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.creativetab.CreativeTabATFood;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,7 +12,7 @@ public class ATItemFood extends ItemFood{
 
     public ATItemFood(int id, boolean b) {
         super(id, b);
-        this.setCreativeTab(CreativeTabAT.tab);
+        this.setCreativeTab(CreativeTabATFood.tab);
     }
 
     @Override

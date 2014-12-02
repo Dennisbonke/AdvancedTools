@@ -6,13 +6,13 @@ import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 
-import com.zandor300.advancedtools.creativetab.CreativeTabAT;
+import com.zandor300.advancedtools.creativetab.CreativeTabATTools;
 
 public class EmeraldArmor extends ATItemArmor {
 
 	public EmeraldArmor(String name, String texture, ArmorMaterial material, int j) {
 		super(material, j, j);
-		this.setCreativeTab(CreativeTabAT.tab);
+		this.setCreativeTab(CreativeTabATTools.tab);
 		this.setUnlocalizedName(name);
 		this.setTextureName(Reference.MOD_ID + ":" + texture);
 	}
