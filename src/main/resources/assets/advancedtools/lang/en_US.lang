@@ -31,6 +31,10 @@ item.advancedtools:EnderonShovel.name=Enderion Shovel
 item.advancedtools:EnderionSword.name=Enderion Sword
 item.advancedtools:EnderionHoe.name=Enderion Hoe
 
+// Lapis
+item.advancedtools:LapisSword.name=Lapis Sword
+item.advancedtools:LapisHoe.name=Lapis Hoe
+
 // Ingots
 item.advancedtools:BoneIngot.name=Bone Ingot
 item.advancedtools:RedstoneIngot.name=Redstone Ingot

@@ -21,9 +21,9 @@ public class BoneArmor extends ATItemArmor{
         if (stack.getItem() == ModItems.boneHelmet
                 || stack.getItem() == ModItems.boneChestplate
                 || stack.getItem() == ModItems.boneBoots)
-            return Reference.MOD_ID + ":textures/models/armor/bone_1.png";
+            return Reference.MOD_ID + ":textures/models/armor/emerald_1.png";
         if (stack.getItem() == ModItems.boneLeggings)
-            return Reference.MOD_ID + ":textures/models/armor/bone_2.png";
+            return Reference.MOD_ID + ":textures/models/armor/emerald_2.png";
         return null;
     }
 }

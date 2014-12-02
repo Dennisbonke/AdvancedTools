@@ -2,6 +2,7 @@ package com.zandor300.advancedtools;
 
 import com.zandor300.advancedtools.init.ModBlocks;
 import com.zandor300.advancedtools.init.ModItems;
+import com.zandor300.advancedtools.init.Oredictionary;
 import com.zandor300.advancedtools.init.Recipes;
 import com.zandor300.advancedtools.reference.Reference;
 import com.zandor300.advancedtools.utilities.LogHelper;
@@ -39,10 +40,13 @@ public class AdvancedTools {
 		//registerEntity(FrankensteinMob.class, "Frankenstein", 0xeaeae9,
 		//		0xc99a03);
 
+		// Oredictionary
+		Oredictionary.init();
+
+		// Initialize Blocks
        	ModBlocks.init();
 
-		ModItems.preinit();
-
+		// Initialize Items
         ModItems.init();
 
         LogHelper.info("Pre Initialization Complete!");
@@ -67,6 +71,7 @@ public class AdvancedTools {
 	*/@EventHandler
 	public static void Init(FMLInitializationEvent event) {
 
+		// Initialize Recipes
 		Recipes.init();
 
         LogHelper.info("Initialization Complete!");

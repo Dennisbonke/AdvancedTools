@@ -7,15 +7,14 @@ import com.zandor300.advancedtools.items.tools.bone.*;
 import com.zandor300.advancedtools.items.tools.emerald.*;
 import com.zandor300.advancedtools.items.tools.enderion.*;
 import com.zandor300.advancedtools.items.tools.ingot.*;
+import com.zandor300.advancedtools.items.tools.lapis.*;
+import com.zandor300.advancedtools.items.tools.nuggets.EnderionNugget;
 import com.zandor300.advancedtools.items.tools.redstone.*;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.oredict.OreDictionary;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {
@@ -26,7 +25,7 @@ public class ModItems {
     // Bone
     // TODO: Playtest material values.
     public static Item.ToolMaterial bone = EnumHelper.addToolMaterial("Bone", 1, 450, 7.0f, 1.5f, 10);
-    public static ItemArmor.ArmorMaterial boneArmor = EnumHelper.addArmorMaterial("Bone", 5, new int[] { 1, 2, 1, 1 }, 15);
+    public static ItemArmor.ArmorMaterial boneArmor = EnumHelper.addArmorMaterial("Bone", 5, new int[]{1, 2, 1, 1}, 15);
     public static Item boneIngot = new BoneIngot(4000);
     public static Item bonePickaxe = new BonePickaxe(5005, bone);
     public static Item boneShovel = new BoneShovel(5006, bone);
@@ -72,11 +71,12 @@ public class ModItems {
     public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion", 3, 1500, 10.0f, 4.0f, 22);
     //public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial("Enderion", 40, new int[] { 4, 7, 5, 4 }, 25);
     public static Item enderionIngot = new EnderionIngot(6000);
-    public static Item enderionPickaxe = new EnderionPickaxe(6001, enderion);
-    public static Item enderionShovel = new EnderionShovel(6002, enderion);
-    public static Item enderionAxe = new EnderionAxe(6003, enderion);
-    public static Item enderionSword = new EnderionSword(6004, enderion);
-    public static Item enderionHoe = new EnderionHoe(6005, enderion);
+    public static Item enderionNugget = new EnderionNugget(6001);
+    public static Item enderionPickaxe = new EnderionPickaxe(6002, enderion);
+    public static Item enderionShovel = new EnderionShovel(6003, enderion);
+    public static Item enderionAxe = new EnderionAxe(6004, enderion);
+    public static Item enderionSword = new EnderionSword(6005, enderion);
+    public static Item enderionHoe = new EnderionHoe(6006, enderion);
     //public static Item enderionHelmet = new EnderionArmor("EnderionHelmet", "enderionhelmet", enderionArmor, 0);
     //public static Item enderionChestplate = new EnderionArmor("EnderionChestplate", "enderionchestplate", enderionArmor, 1);
     //public static Item enderionLeggings = new EnderionArmor("EnderionLeggings", "enderionleggings", enderionArmor, 2);
@@ -84,14 +84,14 @@ public class ModItems {
 
     // Lapis
     // TODO: Change Tool and Armor material values to fit Lapis.
-    //public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 5, 1600, 9.5f, 5.0f, 30);
+    public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 5, 1600, 9.5f, 5.0f, 30);
     //public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 35, new int[] { 3, 6, 4, 3 }, 23);
     //public static Item lapisIngot = new LapisIngot(7000);
     //public static Item lapisPickaxe = new LapisPickaxe(7001, lapis);
     //public static Item lapisShovel = new LapisShovel(7002, lapis);
     //public static Item lapisAxe = new LapisAxe(7003, lapis);
-    //public static Item lapisSword = new LapisSword(7004, lapis);
-    //public static Item lapisHoe = new LapisHoe(7005, lapis);
+    public static Item lapisSword = new LapisSword(7004, lapis);
+    public static Item lapisHoe = new LapisHoe(7005, lapis);
     //public static Item lapisHelmet = new LapisArmor("LapisHelmet", "lapishelmet", lapisArmor, 0);
     //public static Item lapisChestplate = new LapisArmor("LapisChestplate", "lapischestplate", lapisArmor, 1);
     //public static Item lapisLeggings = new LapisArmor("LapisLeggings", "lapisleggings", lapisArmor, 2);
@@ -112,18 +112,6 @@ public class ModItems {
     //public static Item flintLeggings = new FlintArmor("flintLeggings", "flintleggings", flintArmor, 2);
     //public static Item flintBoots = new FlintArmor("flintBoots", "flintboots", flintArmor, 3);
 
-    public static void preinit() {
-
-        // Oredictionary
-        OreDictionary.registerOre("ingotBone", new ItemStack(ModItems.boneIngot));
-        OreDictionary.registerOre("ingotRedstone", new ItemStack(ModItems.redstoneIngot));
-        OreDictionary.registerOre("materialEnderPearl", new ItemStack(Items.ender_pearl));
-        OreDictionary.registerOre("ingotEnderion", new ItemStack(ModItems.enderionIngot));
-        //OreDictionary.registerOre("ingotFlint", new ItemStack(ModItems.flintIngot));
-        //OreDictionary.registerOre("ingotLapis", new ItemStack(ModItems.lapisIngot));
-        //OreDictionary.registerOre("ingotNetherion", new ItemStack(ModItems.netherionIngot));
-    }
-
     public static void init() {
 
         // Food
@@ -136,6 +124,9 @@ public class ModItems {
         GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
         //GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
         //GameRegistry.registerItem(flintIngot, "Flint Ingot");
+
+        // Nuggets
+        GameRegistry.registerItem(enderionNugget, "Enderion Nugget");
 
         // Tools
         // Emerald
@@ -170,8 +161,8 @@ public class ModItems {
         //GameRegistry.registerItem(lapisPickaxe, "Lapis Pickaxe");
         //GameRegistry.registerItem(lapisShovel, "Lapis Shovel");
         //GameRegistry.registerItem(lapisAxe, "Lapis Axe");
-        //GameRegistry.registerItem(lapisSword, "Lapis Sword");
-        //GameRegistry.registerItem(lapisHoe, "Lapis Hoe");
+        GameRegistry.registerItem(lapisSword, "Lapis Sword");
+        GameRegistry.registerItem(lapisHoe, "Lapis Hoe");
 
         // Flint
         //GameRegistry.registerItem(flintPickaxe, "Flint Pickaxe");
