@@ -4,9 +4,6 @@ import com.zandor300.advancedtools.creativetab.CreativeTabATTools;
 import com.zandor300.advancedtools.items.genericitems.ATItemArmor;
 import com.zandor300.advancedtools.reference.Reference;
 
-/**
- * Created by Zandor on 2-12-2014.
- */
 public class QuartzArmor extends ATItemArmor {
     public QuartzArmor(String name, String texture, ArmorMaterial material, int j) {
         super(material, j, j);
@@ -18,11 +15,11 @@ public class QuartzArmor extends ATItemArmor {
     /*@Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot,
                                   String type) {
-        if (stack.getItem() == ModItems.emeraldHelmet
-                || stack.getItem() == ModItems.emeraldChestplate
-                || stack.getItem() == ModItems.emeraldBoots)
+        if (stack.getItem() == ModItems.quartzHelmet
+                || stack.getItem() == ModItems.quartzChestplate
+                || stack.getItem() == ModItems.quartzBoots)
             return Reference.MOD_ID + ":textures/models/armor/emerald_1.png";
-        if (stack.getItem() == ModItems.emeraldLeggings)
+        if (stack.getItem() == ModItems.quartzLeggings)
             return Reference.MOD_ID + ":textures/models/armor/emerald_2.png";
         return null;
     }*/

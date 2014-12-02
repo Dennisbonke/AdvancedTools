@@ -14,11 +14,11 @@ public class EnderionArmor extends ATItemArmor{
     /*@Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot,
                                   String type) {
-        if (stack.getItem() == ModItems.emeraldHelmet
-                || stack.getItem() == ModItems.emeraldChestplate
-                || stack.getItem() == ModItems.emeraldBoots)
+        if (stack.getItem() == ModItems.enderionHelmet
+                || stack.getItem() == ModItems.enderionChestplate
+                || stack.getItem() == ModItems.enderionBoots)
             return Reference.MOD_ID + ":textures/models/armor/emerald_1.png";
-        if (stack.getItem() == ModItems.emeraldLeggings)
+        if (stack.getItem() == ModItems.eenderionLeggings)
             return Reference.MOD_ID + ":textures/models/armor/emerald_2.png";
         return null;
     }*/
