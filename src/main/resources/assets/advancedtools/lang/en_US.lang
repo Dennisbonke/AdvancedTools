@@ -32,6 +32,9 @@ item.advancedtools:EnderionSword.name=Enderion Sword
 item.advancedtools:EnderionHoe.name=Enderion Hoe
 
 // Lapis
+item.advancedtools:LapisPickaxe.name=Lapis Pickaxe
+item.advancedtools:LapisAxe.name=Lapis Axe
+item.advancedtools:LapisShovel=Lapis Shovel
 item.advancedtools:LapisSword.name=Lapis Sword
 item.advancedtools:LapisHoe.name=Lapis Hoe
 
@@ -40,6 +43,8 @@ item.advancedtools:BoneIngot.name=Bone Ingot
 item.advancedtools:RedstoneIngot.name=Redstone Ingot
 item.advancedtools:EnderionIngot.name=Enderion Ingot
 item.advancedtools:LapisIngot.name=Lapis Ingot
+item.advancedtools:FlintIngot.name=Flint Ingot
+item.advancedtools:NetherionIngot.name=Netherion Ingot
 
 // Armor
 // Emerald

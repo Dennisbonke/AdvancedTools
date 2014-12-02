@@ -8,6 +8,7 @@ import com.zandor300.advancedtools.items.tools.emerald.*;
 import com.zandor300.advancedtools.items.tools.enderion.*;
 import com.zandor300.advancedtools.items.tools.ingot.*;
 import com.zandor300.advancedtools.items.tools.lapis.*;
+import com.zandor300.advancedtools.items.tools.netherion.*;
 import com.zandor300.advancedtools.items.tools.nuggets.*;
 import com.zandor300.advancedtools.items.tools.redstone.*;
 import com.zandor300.advancedtools.reference.Reference;
@@ -117,6 +118,22 @@ public class ModItems {
     //public static Item flintLeggings = new FlintArmor("flintLeggings", "flintleggings", flintArmor, 2);
     //public static Item flintBoots = new FlintArmor("flintBoots", "flintboots", flintArmor, 3);
 
+    // Netherion
+    // TODO: Change Tool and Armor material values to fit Netherion.
+    public static Item.ToolMaterial netherion = EnumHelper.addToolMaterial("Netherion", 2, 400, 6.5f, 3.0f, 15);
+    public static ItemArmor.ArmorMaterial netherionArmor = EnumHelper.addArmorMaterial("Netherion", 22, new int[] { 2, 5, 3, 2 }, 13);
+    public static Item netherionIngot = new NetherionIngot(9000);
+    public static Item netherionNugget = new NetherionNugget(9001);
+    public static Item netherionPickaxe = new NetherionPickaxe(9002, netherion);
+    public static Item netherionShovel = new NetherionShovel(9002, netherion);
+    public static Item netherionAxe = new NetherionAxe(9003, netherion);
+    public static Item netherionSword = new NetherionSword(9004, netherion);
+    public static Item netherionHoe = new NetherionHoe(9005, netherion);
+    public static Item netherionHelmet = new NetherionArmor("netherionHelmet", "netherionhelmet", flintArmor, 0);
+    public static Item netherionChestPlate = new NetherionArmor("netherionChestplate", "netherionchestplate", netherionArmor, 1);
+    public static Item netherionLeggings = new NetherionArmor("netherionLeggings", "netherionleggings", netherionArmor, 2);
+    public static Item netherionBoots = new NetherionArmor("netherionBoots", "netherionboots", netherionArmor, 3);
+
     public static void init() {
 
         // Food
@@ -129,6 +146,7 @@ public class ModItems {
         GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
         GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
         //GameRegistry.registerItem(flintIngot, "Flint Ingot");
+        GameRegistry.registerItem(netherionIngot, "Netherion Ingot");
 
         // Nuggets
         GameRegistry.registerItem(emeraldNugget, "Emerald Nugget");
@@ -137,6 +155,7 @@ public class ModItems {
         GameRegistry.registerItem(enderionNugget, "Enderion Nugget");
         GameRegistry.registerItem(lapisNugget, "Lapis Nugget");
         GameRegistry.registerItem(flintNugget, "Flint Nugget");
+        GameRegistry.registerItem(netherionNugget, "Netherion Nugget");
 
         // Tools
         // Emerald
@@ -181,6 +200,13 @@ public class ModItems {
         //GameRegistry.registerItem(flintSword, "Flint Sword");
         //GameRegistry.registerItem(flintHoe, "Flint Hoe");
 
+        // Netherion
+        GameRegistry.registerItem(netherionPickaxe, "Netherion Pickaxe");
+        GameRegistry.registerItem(netherionShovel, "Netherion Shovel");
+        GameRegistry.registerItem(netherionAxe, "Netherion Axe");
+        GameRegistry.registerItem(netherionSword, "Netherion Sword");
+        GameRegistry.registerItem(netherionHoe, "Netherion Hoe");
+
         // Armor
         // Emerald
         GameRegistry.registerItem(emeraldHelmet, "Emerald Helmet");
@@ -217,5 +243,11 @@ public class ModItems {
         //GameRegistry.registerItem(flintChestplate, "Flint Chestplate");
         //GameRegistry.registerItem(flintLeggings, "Flint Leggings");
         //GameRegistry.registerItem(flintBoots, "Flint Boots");
+
+        // Netherion
+        GameRegistry.registerItem(netherionHelmet, "Netherion Helmet");
+        GameRegistry.registerItem(netherionChestPlate, "Netherion Chestplate");
+        GameRegistry.registerItem(netherionLeggings, "Netherion Leggings");
+        GameRegistry.registerItem(netherionBoots, "Netherion Boots");
     }
 }
