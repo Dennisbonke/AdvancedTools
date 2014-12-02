@@ -41,17 +41,17 @@ public class ModItems {
     // Redstone
     // TODO: Playtest material values.
     public static Item.ToolMaterial redstone = EnumHelper.addToolMaterial("Redstone", 2, 750, 8.0f, 2.5f, 30);
-   // public static ItemArmor.ArmorMaterial redstoneArmor = EnumHelper.addArmorMaterial("Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
+    public static ItemArmor.ArmorMaterial redstoneArmor = EnumHelper.addArmorMaterial("Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
     public static Item redstoneIngot = new RedstoneIngot(4001);
     public static Item redstonePickaxe = new RedstonePickaxe(5010, redstone);
     public static Item redstoneShovel = new RedstoneShovel(5011, redstone);
     public static Item redstoneAxe = new RedstoneAxe(5012, redstone);
     public static Item redstoneSword = new RedstoneSword(5013, redstone);
     public static Item redstoneHoe = new RedstoneHoe(5014, redstone);
-    //public static Item redstoneHelmet = new RedstoneArmor("RedstoneHelmet", "redstonehelmet", redstoneArmor, 0);
-    //public static Item redstoneChestplate = new RedstoneArmor("RedstoneChestplate", "redstonechestplate", redstoneArmor, 1);
-    //public static Item redstoneLeggings = new RedstoneArmor("RedstoneLeggings", "redstoneleggings", redstoneArmor, 2);
-    //public static Item redstoneBoots = new RedstoneArmor("RedstoneBoots", "redstoneboots", redstoneArmor, 3);
+    public static Item redstoneHelmet = new RedstoneArmor("RedstoneHelmet", "redstonehelmet", redstoneArmor, 0);
+    public static Item redstoneChestplate = new RedstoneArmor("RedstoneChestplate", "redstonechestplate", redstoneArmor, 1);
+    public static Item redstoneLeggings = new RedstoneArmor("RedstoneLeggings", "redstoneleggings", redstoneArmor, 2);
+    public static Item redstoneBoots = new RedstoneArmor("RedstoneBoots", "redstoneboots", redstoneArmor, 3);
 
     // Emerald
     // TODO: Playtest material values.
@@ -84,7 +84,7 @@ public class ModItems {
 
     // Lapis
     // TODO: Change Tool and Armor material values to fit Lapis.
-    public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 5, 1600, 9.5f, 5.0f, 30);
+    //public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 5, 1600, 9.5f, 5.0f, 30);
     //public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 35, new int[] { 3, 6, 4, 3 }, 23);
     //public static Item lapisIngot = new LapisIngot(7000);
     //public static Item lapisPickaxe = new LapisPickaxe(7001, lapis);
@@ -188,10 +188,10 @@ public class ModItems {
         GameRegistry.registerItem(emeraldBoots, "Emerald Boots");
 
         // Redstone
-        //GameRegistry.registerItem(redstoneHelmet, "Redstone Helmet");
-        //GameRegistry.registerItem(redstoneChestplate, "Redstone Chestplate");
-        //GameRegistry.registerItem(redstoneLeggings, "Redstone Leggings");
-        //GameRegistry.registerItem(redstoneBoots, "Redstone Boots");
+        GameRegistry.registerItem(redstoneHelmet, "Redstone Helmet");
+        GameRegistry.registerItem(redstoneChestplate, "Redstone Chestplate");
+        GameRegistry.registerItem(redstoneLeggings, "Redstone Leggings");
+        GameRegistry.registerItem(redstoneBoots, "Redstone Boots");
 
         // Bone
         GameRegistry.registerItem(boneHelmet, "Bone Helmet");
