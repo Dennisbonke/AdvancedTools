@@ -12,9 +12,12 @@ import com.zandor300.advancedtools.items.tools.lapis.*;
 import com.zandor300.advancedtools.items.tools.redstone.*;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.oredict.OreDictionary;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {
@@ -23,6 +26,7 @@ public class ModItems {
     public static Item LuckyStar = new LuckyStar(3001, 20, true);
 
     // Bone
+    // TODO: Playtest material values.
     public static Item.ToolMaterial bone = EnumHelper.addToolMaterial("Bone", 1, 450, 7.0f, 1.5f, 10);
     //public static ItemArmor.ArmorMaterial boneArmor = EnumHelper.addArmorMaterial("Bone", 5, new int[] { 1, 2, 1, 1 }, 15);
     public static Item boneIngot = new BoneIngot(4000);
@@ -37,6 +41,7 @@ public class ModItems {
     //public static Item boneBoots = new BoneArmor("BoneBoots", "boneboots", boneArmor, 3);
 
     // Redstone
+    // TODO: Playtest material values.
     public static Item.ToolMaterial redstone = EnumHelper.addToolMaterial("Redstone", 2, 750, 8.0f, 2.5f, 30);
     //public static ItemArmor.ArmorMaterial redstoneArmor = EnumHelper.addArmorMaterial("Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
     public static Item redstoneIngot = new RedstoneIngot(4001);
@@ -51,6 +56,7 @@ public class ModItems {
     //public static Item redstoneBoots = new RedstoneArmor("RedstoneBoots", "redstoneboots", redstoneArmor, 3);
 
     // Emerald
+    // TODO: Playtest material values.
     public static Item.ToolMaterial emerald = EnumHelper.addToolMaterial("Emerald", 3, 1500, 10.0f, 4.0f, 22);
     public static ItemArmor.ArmorMaterial emeraldArmor = EnumHelper.addArmorMaterial("Emerald", 40, new int[] { 4, 7, 5, 4 }, 25);
     public static Item emeraldPickaxe = new EmeraldPickaxe(5000, emerald);
@@ -64,6 +70,7 @@ public class ModItems {
     public static Item emeraldBoots = new EmeraldArmor("EmeraldBoots", "emeraldboots", emeraldArmor, 3);
 
     // Enderion
+    // TODO: Change Tool and Armor material values to fit Enderion.
     //public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion", 3, 1500, 10.0f, 4.0f, 22);
     //public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial("Enderion", 40, new int[] { 4, 7, 5, 4 }, 25);
     //public static Item enderionIngot = new EnderionIngot(6000);
@@ -106,6 +113,17 @@ public class ModItems {
     //public static Item flintChestplate = new FlintArmor("flintChestplate", "flintchestplate", flintArmor, 1);
     //public static Item flintLeggings = new FlintArmor("flintLeggings", "flintleggings", flintArmor, 2);
     //public static Item flintBoots = new FlintArmor("flintBoots", "flintboots", flintArmor, 3);
+
+    public static void preinit() {
+
+        // Oredictionary
+        OreDictionary.registerOre("ingotBone", new ItemStack(ModItems.boneIngot));
+        OreDictionary.registerOre("ingotRedstone", new ItemStack(ModItems.redstoneIngot));
+        OreDictionary.registerOre("materialEnderPearl", new ItemStack(Items.ender_pearl));
+        //OreDictionary.registerOre("ingotEnderion", new ItemStack(ModItems.enderionIngot));
+        //OreDictionary.registerOre("ingotFlint", new ItemStack(ModItems.flintIngot));
+        //OreDictionary.registerOre("ingotLapis", new ItemStack(ModItems.lapisIngot));
+    }
 
     public static void init() {
 

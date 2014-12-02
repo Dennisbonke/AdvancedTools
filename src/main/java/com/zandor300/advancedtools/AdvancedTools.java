@@ -32,7 +32,7 @@ public class AdvancedTools {
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
-		//Render Info
+		// Render Info
 		//Proxy.registerRenderInfo();
 
 		// Register Entity
@@ -41,9 +41,9 @@ public class AdvancedTools {
 
        	// ModBlocks.init();
 
-        ModItems.init();
+		ModItems.preinit();
 
-		Recipes.init();
+        ModItems.init();
 
         LogHelper.info("Pre Initialization Complete!");
 	}
@@ -66,6 +66,8 @@ public class AdvancedTools {
 
 	*/@EventHandler
 	public static void Init(FMLInitializationEvent event) {
+
+		Recipes.init();
 
         LogHelper.info("Initialization Complete!");
 	}
