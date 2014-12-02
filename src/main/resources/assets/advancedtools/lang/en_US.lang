@@ -25,7 +25,11 @@ item.advancedtools:RedstoneShovel.name=Redstone Shovel
 item.advancedtools:RedstoneSword.name=Redstone Sword
 
 // Enderion
-
+item.advancedtools:EnderionPickaxe.name=Enderion Pickaxe
+item.advancedtools:EnderionAxe.name=Enderion Axe
+item.advancedtools:EnderionHoe.name=Enderion Hoe
+item.advancedtools:EnderionShovel.name=Enderion Shovel
+item.advancedtools:EnderionSword.name=Enderion Sword
 
 // Ingots
 item.advancedtools:BoneIngot.name=Bone Ingot
