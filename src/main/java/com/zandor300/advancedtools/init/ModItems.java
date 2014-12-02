@@ -156,6 +156,7 @@ public class ModItems {
         //GameRegistry.registerItem(lapisNugget, "Lapis Nugget");
         //GameRegistry.registerItem(flintNugget, "Flint Nugget");
         //GameRegistry.registerItem(netherionNugget, "Netherion Nugget");
+        //GameRegistry.registerItem(quartzNugget, "Quartz Nugget");
 
         // Tools
         // Emerald
