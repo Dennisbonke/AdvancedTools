@@ -85,17 +85,17 @@ public class ModItems {
     // Lapis
     // TODO: Change Tool and Armor material values to fit Lapis.
     public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 3, 600, 7.5f, 3.0f, 20);
-    //public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 25, new int[] { 3, 6, 5, 3 }, 25);
-    //public static Item lapisIngot = new LapisIngot(7000);
+    public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 25, new int[] { 3, 6, 5, 3 }, 25);
+    public static Item lapisIngot = new LapisIngot(7000);
     //public static Item lapisPickaxe = new LapisPickaxe(7001, lapis);
     //public static Item lapisShovel = new LapisShovel(7002, lapis);
     //public static Item lapisAxe = new LapisAxe(7003, lapis);
     public static Item lapisSword = new LapisSword(7004, lapis);
     public static Item lapisHoe = new LapisHoe(7005, lapis);
-    //public static Item lapisHelmet = new LapisArmor("LapisHelmet", "lapishelmet", lapisArmor, 0);
-    //public static Item lapisChestplate = new LapisArmor("LapisChestplate", "lapischestplate", lapisArmor, 1);
-    //public static Item lapisLeggings = new LapisArmor("LapisLeggings", "lapisleggings", lapisArmor, 2);
-    //public static Item lapisBoots = new LapisArmor("LapisBoots", "lapisboots", lapisArmor, 3);
+    public static Item lapisHelmet = new LapisArmor("LapisHelmet", "lapishelmet", lapisArmor, 0);
+    public static Item lapisChestplate = new LapisArmor("LapisChestplate", "lapischestplate", lapisArmor, 1);
+    public static Item lapisLeggings = new LapisArmor("LapisLeggings", "lapisleggings", lapisArmor, 2);
+    public static Item lapisBoots = new LapisArmor("LapisBoots", "lapisboots", lapisArmor, 3);
 
     // Flint
     // TODO: Change Tool and Armor material values to fit Flint.
@@ -122,7 +122,7 @@ public class ModItems {
         GameRegistry.registerItem(boneIngot, "Bone Ingot");
         GameRegistry.registerItem(redstoneIngot, "Redstone Ingot");
         GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
-        //GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
+        GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
         //GameRegistry.registerItem(flintIngot, "Flint Ingot");
 
         // Nuggets
@@ -197,10 +197,10 @@ public class ModItems {
         //GameRegistry.registerItem(enderionnBoots, "Enderion Boots");
 
         // Lapis
-        //GameRegistry.registerItem(lapisHelmet, "Lapis Helmet");
-        //GameRegistry.registerItem(lapisChestplate, "Lapis Chestplate");
-        //GameRegistry.registerItem(lapisLeggings, "Lapis Leggings");
-        //GameRegistry.registerItem(lapisBoots, "Lapis Boots");
+        GameRegistry.registerItem(lapisHelmet, "Lapis Helmet");
+        GameRegistry.registerItem(lapisChestplate, "Lapis Chestplate");
+        GameRegistry.registerItem(lapisLeggings, "Lapis Leggings");
+        GameRegistry.registerItem(lapisBoots, "Lapis Boots");
 
         // Flint
         //GameRegistry.registerItem(flintHelmet, "Flint Helmet");
