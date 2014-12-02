@@ -55,7 +55,7 @@ public class ModItems {
     // Emerald
     // TODO: Playtest material values.
     public static Item.ToolMaterial emerald = EnumHelper.addToolMaterial("Emerald", 3, 1500, 10.0f, 4.0f, 22);
-    public static ItemArmor.ArmorMaterial emeraldArmor = EnumHelper.addArmorMaterial("Emerald", 40, new int[] { 4, 7, 5, 4 }, 25);
+    public static ItemArmor.ArmorMaterial emeraldArmor = EnumHelper.addArmorMaterial("Emerald", 30, new int[] { 4, 7, 5, 4 }, 25);
     public static Item emeraldPickaxe = new EmeraldPickaxe(5000, emerald);
     public static Item emeraldShovel = new EmeraldShovel(5001, emerald);
     public static Item emeraldAxe = new EmeraldAxe(5002, emerald);
@@ -68,8 +68,8 @@ public class ModItems {
 
     // Enderion
     // TODO: Change Tool and Armor material values to fit Enderion.
-    public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion", 3, 1500, 10.0f, 4.0f, 22);
-    //public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial("Enderion", 40, new int[] { 4, 7, 5, 4 }, 25);
+    public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion", 3, 2000, 11.0f, 4.5f, 32);
+    //public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial("Enderion", 40, new int[] { 4, 7, 5, 4 }, 35);
     public static Item enderionIngot = new EnderionIngot(6000);
     public static Item enderionNugget = new EnderionNugget(6001);
     public static Item enderionPickaxe = new EnderionPickaxe(6002, enderion);
@@ -84,8 +84,8 @@ public class ModItems {
 
     // Lapis
     // TODO: Change Tool and Armor material values to fit Lapis.
-    public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 5, 1600, 9.5f, 5.0f, 30);
-    //public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 35, new int[] { 3, 6, 4, 3 }, 23);
+    public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 3, 600, 7.5f, 3.0f, 20);
+    //public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 25, new int[] { 3, 6, 5, 3 }, 25);
     //public static Item lapisIngot = new LapisIngot(7000);
     //public static Item lapisPickaxe = new LapisPickaxe(7001, lapis);
     //public static Item lapisShovel = new LapisShovel(7002, lapis);
@@ -99,8 +99,8 @@ public class ModItems {
 
     // Flint
     // TODO: Change Tool and Armor material values to fit Flint.
-    //public static Item.ToolMaterial flint = EnumHelper.addToolMaterial("Flint", 5, 1600, 9.5f, 5.0f, 30);
-    //public static ItemArmor.ArmorMaterial flintArmor = EnumHelper.addArmorMaterial("Flint", 35, new int[] { 3, 6, 4, 3 }, 23);
+    //public static Item.ToolMaterial flint = EnumHelper.addToolMaterial("Flint", 2, 400, 6.5f, 3.0f, 15);
+    //public static ItemArmor.ArmorMaterial flintArmor = EnumHelper.addArmorMaterial("Flint", 22, new int[] { 2, 5, 3, 2 }, 13);
     //public static Item flintIngot = new FlintIngot(8000);
     //public static Item flintPickaxe = new FlintPickaxe(8001, flint);
     //public static Item flintShovel = new FlintShovel(8002, flint);
