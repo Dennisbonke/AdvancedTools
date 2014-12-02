@@ -6,10 +6,8 @@ import com.zandor300.advancedtools.items.food.Strawberry;
 import com.zandor300.advancedtools.items.tools.bone.*;
 import com.zandor300.advancedtools.items.tools.emerald.*;
 import com.zandor300.advancedtools.items.tools.enderion.*;
-import com.zandor300.advancedtools.items.tools.ingot.BoneIngot;
-import com.zandor300.advancedtools.items.tools.ingot.EnderionIngot;
-import com.zandor300.advancedtools.items.tools.ingot.LapisIngot;
-import com.zandor300.advancedtools.items.tools.ingot.RedstoneIngot;
+import com.zandor300.advancedtools.items.tools.flint.*;
+import com.zandor300.advancedtools.items.tools.ingot.*;
 import com.zandor300.advancedtools.items.tools.lapis.*;
 import com.zandor300.advancedtools.items.tools.redstone.*;
 import com.zandor300.advancedtools.reference.Reference;
@@ -113,6 +111,17 @@ public class ModItems {
     public static Item lapisSword = new LapisSword(7004, lapis);
     public static Item lapisHoe = new LapisHoe(7005, lapis);
 
+    // Flint
+    // TODO: Change Tool and Armor material values to fit Flint.
+    public static Item.ToolMaterial flint = EnumHelper.addToolMaterial("Flint", 5, 1600, 9.5f, 5.0f, 30);
+    public static ItemArmor.ArmorMaterial flintArmor = EnumHelper.addArmorMaterial("Flint", 35, new int[] { 3, 6, 4, 3 }, 23);
+    public static Item flintIngot = new FlintIngot(8000);
+    public static Item flintPickaxe = new FlintPickaxe(8001, flint);
+    public static Item flintShovel = new FlintShovel(8002, flint);
+    public static Item flintAxe = new FlintAxe(8003, flint);
+    public static Item flintSword = new FlintSword(8004, flint);
+    public static Item flintHoe = new FlintHoe(8005, flint);
+
     public static void init() {
 
         // Food
@@ -124,6 +133,7 @@ public class ModItems {
         GameRegistry.registerItem(redstoneIngot, "Redstone Ingot");
         GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
         GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
+        GameRegistry.registerItem(flintIngot, "Flint Ingot");
 
         // Tools
         // Emerald
@@ -153,6 +163,13 @@ public class ModItems {
         GameRegistry.registerItem(enderionAxe, "Enderion Axe");
         GameRegistry.registerItem(enderionSword, "Enderion Sword");
         GameRegistry.registerItem(enderionHoe, "Enderion Hoe");
+
+        // Flint
+        GameRegistry.registerItem(flintPickaxe, "Flint Pickaxe");
+        GameRegistry.registerItem(flintShovel, "Flint Shovel");
+        GameRegistry.registerItem(flintAxe, "Flint Axe");
+        GameRegistry.registerItem(flintSword, "Flint Sword");
+        GameRegistry.registerItem(flintHoe, "Flint Hoe");
 
         // Armor
         // Emerald
