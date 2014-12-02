@@ -39,7 +39,7 @@ public class AdvancedTools {
 		//registerEntity(FrankensteinMob.class, "Frankenstein", 0xeaeae9,
 		//		0xc99a03);
 
-       	// ModBlocks.init();
+       	ModBlocks.init();
 
 		ModItems.preinit();
 
