@@ -30,6 +30,7 @@ item.advancedtools:RedstoneSword.name=Redstone Sword
 // Ingots
 item.advancedtools:BoneIngot.name=Bone Ingot
 item.advancedtools:RedstoneIngot.name=Redstone Ingot
+item.advancedtools:EnderionIngot.name=Enderion Ingot
 
 // Armor
 // Emerald

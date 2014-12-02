@@ -73,7 +73,7 @@ public class ModItems {
     // TODO: Change Tool and Armor material values to fit Enderion.
     //public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion", 3, 1500, 10.0f, 4.0f, 22);
     //public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial("Enderion", 40, new int[] { 4, 7, 5, 4 }, 25);
-    //public static Item enderionIngot = new EnderionIngot(6000);
+    public static Item enderionIngot = new EnderionIngot(6000);
     //public static Item enderionPickaxe = new EnderionPickaxe(6001, enderion);
     //public static Item enderionShovel = new EnderionShovel(6002, enderion);
     //public static Item enderionAxe = new EnderionAxe(6003, enderion);
@@ -120,9 +120,10 @@ public class ModItems {
         OreDictionary.registerOre("ingotBone", new ItemStack(ModItems.boneIngot));
         OreDictionary.registerOre("ingotRedstone", new ItemStack(ModItems.redstoneIngot));
         OreDictionary.registerOre("materialEnderPearl", new ItemStack(Items.ender_pearl));
-        //OreDictionary.registerOre("ingotEnderion", new ItemStack(ModItems.enderionIngot));
+        OreDictionary.registerOre("ingotEnderion", new ItemStack(ModItems.enderionIngot));
         //OreDictionary.registerOre("ingotFlint", new ItemStack(ModItems.flintIngot));
         //OreDictionary.registerOre("ingotLapis", new ItemStack(ModItems.lapisIngot));
+        //OreDictionary.registerOre("ingotNetherion", new ItemStack(ModItems.netherionIngot));
     }
 
     public static void init() {
@@ -134,7 +135,7 @@ public class ModItems {
         // Ingots
         GameRegistry.registerItem(boneIngot, "Bone Ingot");
         GameRegistry.registerItem(redstoneIngot, "Redstone Ingot");
-        //GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
+        GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
         //GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
         //GameRegistry.registerItem(flintIngot, "Flint Ingot");
 
