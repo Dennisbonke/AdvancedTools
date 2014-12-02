@@ -98,10 +98,10 @@ item.advancedtools:FlintLeggings.name=Flint Leggings
 item.advancedtools:FlintBoots.name=Flint Boots
 
 // Netherion
-item.advancedtools:NetherionHelmet.name=Netherion Helmet
-item.advancedtools:NetherionChestplate.name=Netherion Chestplate
-item.advancedtools:NetherionLeggings.name=Netherion Leggings
-item.advancedtools:NetherionBoots.name=Netherion Boots
+item.advancedtools:netherionHelmet.name=Netherion Helmet
+item.advancedtools:netherionChestplate.name=Netherion Chestplate
+item.advancedtools:netherionLeggings.name=Netherion Leggings
+item.advancedtools:netherionBoots.name=Netherion Boots
 
 // Nugget
 item.advancedtools:EmeraldNugget.name=Emerald Nugget
@@ -110,6 +110,7 @@ item.advancedtools:BoneNugget.name=Bone Nugget
 item.advancedtools:EnderionNugget.name=Enderion Nugget
 item.advancedtools:LapisNugget.name=Lapis Nugget
 item.advancedtools:FlintNugget.name=Flint Nugget
+item.advancedtools:NetherionNugget.name=Netherion Nugget
 
 // Blocks
 tile.advancedtools:StrawberryCrop.name=Strawberry Crop
