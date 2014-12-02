@@ -38,6 +38,20 @@ item.advancedtools:LapisShovel=Lapis Shovel
 item.advancedtools:LapisSword.name=Lapis Sword
 item.advancedtools:LapisHoe.name=Lapis Hoe
 
+// Flint
+item.advancedtools:FlintPickaxe.name=Flint Pickaxe
+item.advancedtools:FlintAxe.name=Flint Axe
+item.advancedtools:FlintShovel.name=Flint Shovel
+item.advancedtools:FlintSword.name=Flint Sword
+item.advancedtools:FlintHoe.name=Flint Hoe
+
+// Netherion
+item.advancedtools:NetherionPickaxe.name=Netherion Pickaxe
+item.advancedtools:NetherionAxe.name=Netherion Axe
+item.advancedtools:NetherionShovel.name=Netherion Shovel
+item.advancedtools:NetherionSword.name=Netherion Sword
+item.advancedtools:NetherionHoe.name=Netherion Hoe
+
 // Ingots
 item.advancedtools:BoneIngot.name=Bone Ingot
 item.advancedtools:RedstoneIngot.name=Redstone Ingot
@@ -76,6 +90,18 @@ item.advancedtools:LapisHelmet.name=Lapis Helmet
 item.advancedtools:LapisChestplate.name=Lapis Chestplate
 item.advancedtools:LapisLeggings.name=Lapis Leggings
 item.advancedtools:LapisBoots.name=Lapis Boots
+
+// Flint
+item.advancedtools:FlintHelmet.name=Flint Helmet
+item.advancedtools:FlintChestplate.name=Flint Chestplate
+item.advancedtools:FlintLeggings.name=Flint Leggings
+item.advancedtools:FlintBoots.name=Flint Boots
+
+// Netherion
+item.advancedtools:NetherionHelmet.name=Netherion Helmet
+item.advancedtools:NetherionChestplate.name=Netherion Chestplate
+item.advancedtools:NetherionLeggings.name=Netherion Leggings
+item.advancedtools:NetherionBoots.name=Netherion Boots
 
 // Nugget
 item.advancedtools:EmeraldNugget.name=Emerald Nugget
