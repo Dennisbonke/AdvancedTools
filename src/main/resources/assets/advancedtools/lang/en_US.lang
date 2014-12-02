@@ -61,6 +61,10 @@ item.advancedtools:BoneLeggings.name=Bone Leggings
 item.advancedtools:BoneBoots.name=Bone Boots
 
 // Enderion
+item.advancedtools:EnderionHelmet.name=Enderion Helmet
+item.advancedtools:EnderionChestplate.name=Enderion Chestplate
+item.advancedtools:EnderionLeggings.name=Enderion Leggings
+item.advancedtools:EnderionBoots.name=Enderion Boots
 
 // Lapis
 item.advancedtools:LapisHelmet.name=Lapis Helmet
