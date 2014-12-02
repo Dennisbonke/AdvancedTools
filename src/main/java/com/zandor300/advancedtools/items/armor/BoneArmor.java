@@ -15,15 +15,15 @@ public class BoneArmor extends ATItemArmor{
         this.setTextureName(Reference.MOD_ID + ":" + texture);
     }
 
-    /*@Override
+    @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot,
                                   String type) {
-        if (stack.getItem() == ModItems.emeraldHelmet
-                || stack.getItem() == ModItems.emeraldChestplate
-                || stack.getItem() == ModItems.emeraldBoots)
-            return Reference.MOD_ID + ":textures/models/armor/emerald_1.png";
-        if (stack.getItem() == ModItems.emeraldLeggings)
-            return Reference.MOD_ID + ":textures/models/armor/emerald_2.png";
+        if (stack.getItem() == ModItems.boneHelmet
+                || stack.getItem() == ModItems.boneChestplate
+                || stack.getItem() == ModItems.boneBoots)
+            return Reference.MOD_ID + ":textures/models/armor/bone_1.png";
+        if (stack.getItem() == ModItems.boneLeggings)
+            return Reference.MOD_ID + ":textures/models/armor/bone_2.png";
         return null;
-    }*/
+    }
 }
