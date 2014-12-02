@@ -39,6 +39,7 @@ item.advancedtools:LapisHoe.name=Lapis Hoe
 item.advancedtools:BoneIngot.name=Bone Ingot
 item.advancedtools:RedstoneIngot.name=Redstone Ingot
 item.advancedtools:EnderionIngot.name=Enderion Ingot
+item.advancedtools:LapisIngot.name=Lapis Ingot
 
 // Armor
 // Emerald
@@ -60,6 +61,15 @@ item.advancedtools:BoneLeggings.name=Bone Leggings
 item.advancedtools:BoneBoots.name=Bone Boots
 
 // Enderion
+
+// Lapis
+item.advancedtools:LapisHelmet.name=Lapis Helmet
+item.advancedtools:LapisChestplate.name=Lapis Chestplate
+item.advancedtools:LapisLeggings.name=Lapis Leggings
+item.advancedtools:LapisBoots.name=Lapis Boots
+
+// Nugget
+item.advancedtools:EnderionNugget.name=Enderion Nugget
 
 
 // Blocks
