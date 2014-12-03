@@ -1,11 +1,14 @@
 package com.zandor300.advancedtools;
 
+import com.zandor300.advancedtools.handler.IMCHandler;
 import com.zandor300.advancedtools.init.ModBlocks;
 import com.zandor300.advancedtools.init.ModItems;
 import com.zandor300.advancedtools.init.Oredictionary;
 import com.zandor300.advancedtools.init.Recipes;
 import com.zandor300.advancedtools.reference.Reference;
 import com.zandor300.advancedtools.utilities.LogHelper;
+import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.common.event.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EntityList.EntityEggInfo;
@@ -19,9 +22,6 @@ import com.zandor300.advancedtools.proxy.ServerProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
@@ -30,6 +30,13 @@ public class AdvancedTools {
 	@SidedProxy(clientSide = Reference.CLIENTSIDE, serverSide = Reference.SERVERSIDE)
 	public static ServerProxy Proxy;
 
+	public AdvancedTools() {
+		if (Loader.isModLoaded("Thermal Expansion")) {
+			LogHelper.info("TE found, stay tuned!");
+		} else {
+			LogHelper.info("TE not found :(");
+		}
+	}
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
@@ -80,6 +87,16 @@ public class AdvancedTools {
 	@EventHandler
 	public static void PostInit(FMLPostInitializationEvent event) {
 
-        LogHelper.info("Post Initialization Complete!");
+		LogHelper.info("Post Initialization Complete!");
+	}
+	@EventHandler
+	public void handleIMC(FMLInterModComms.IMCEvent e)
+	{
+		IMCHandler.processIMC(e.getMessages());
+	}
+	@EventHandler
+	public void loadComplete(FMLLoadCompleteEvent evt)
+	{
+		IMCHandler.processIMC(FMLInterModComms.fetchRuntimeMessages(this));
 	}
 }
