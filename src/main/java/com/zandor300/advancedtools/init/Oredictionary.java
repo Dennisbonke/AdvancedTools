@@ -15,6 +15,7 @@ public class Oredictionary {
         //OreDictionary.registerOre("ingotFlint", new ItemStack(ModItems.flintIngot));
         OreDictionary.registerOre("ingotLapis", new ItemStack(ModItems.lapisIngot));
         //OreDictionary.registerOre("ingotNetherion", new ItemStack(ModItems.netherionIngot));
+        //OreDictionary.registerOre("ingotQuartz", new ItemStack(ModItems.quartzIngot));
 
 
         // Nuggets

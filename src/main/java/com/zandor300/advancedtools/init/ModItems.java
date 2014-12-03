@@ -25,6 +25,7 @@ public class ModItems {
 
     // Bone
     // TODO: Playtest material values.
+    // TODO: Finish Bone.
     public static Item.ToolMaterial bone = EnumHelper.addToolMaterial("Bone", 1, 450, 7.0f, 1.5f, 10);
     public static ItemArmor.ArmorMaterial boneArmor = EnumHelper.addArmorMaterial("Bone", 5, new int[]{1, 2, 1, 1}, 15);
     public static Item boneIngot = new BoneIngot(4000);
@@ -41,6 +42,7 @@ public class ModItems {
 
     // Redstone
     // TODO: Playtest material values.
+    // TODO: Finish Redstone.
     public static Item.ToolMaterial redstone = EnumHelper.addToolMaterial("Redstone", 2, 750, 8.0f, 2.5f, 30);
     public static ItemArmor.ArmorMaterial redstoneArmor = EnumHelper.addArmorMaterial("Redstone", 20, new int[] { 2, 5, 4, 2 }, 35);
     public static Item redstoneIngot = new RedstoneIngot(4001);
@@ -57,6 +59,7 @@ public class ModItems {
 
     // Emerald
     // TODO: Playtest material values.
+    // TODO: Finish Emerald.
     public static Item.ToolMaterial emerald = EnumHelper.addToolMaterial("Emerald", 3, 1500, 10.0f, 4.0f, 22);
     public static ItemArmor.ArmorMaterial emeraldArmor = EnumHelper.addArmorMaterial("Emerald", 30, new int[] { 4, 7, 5, 4 }, 25);
     //public static Item emeraldNugget = new EmeraldNugget(5000);
@@ -72,6 +75,7 @@ public class ModItems {
 
     // Enderion
     // TODO: Change Tool and Armor material values to fit Enderion.
+    // TODO: Finish Enderion.
     public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion", 3, 2000, 11.0f, 4.5f, 32);
     //public static ItemArmor.ArmorMaterial enderionArmor = EnumHelper.addArmorMaterial("Enderion", 40, new int[] { 4, 7, 5, 4 }, 35);
     public static Item enderionIngot = new EnderionIngot(6000);
@@ -88,6 +92,7 @@ public class ModItems {
 
     // Lapis
     // TODO: Change Tool and Armor material values to fit Lapis.
+    // TODO: Finish Lapis.
     public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 3, 600, 7.5f, 3.0f, 20);
     public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 25, new int[] { 3, 6, 5, 3 }, 25);
     public static Item lapisIngot = new LapisIngot(7000);
@@ -104,6 +109,7 @@ public class ModItems {
 
     // Flint
     // TODO: Change Tool and Armor material values to fit Flint.
+    // TODO: Finish Flint.
     //public static Item.ToolMaterial flint = EnumHelper.addToolMaterial("Flint", 2, 400, 6.5f, 3.0f, 15);
     //public static ItemArmor.ArmorMaterial flintArmor = EnumHelper.addArmorMaterial("Flint", 22, new int[] { 2, 5, 3, 2 }, 13);
     //public static Item flintIngot = new FlintIngot(8000);
@@ -120,6 +126,7 @@ public class ModItems {
 
     // Netherion
     // TODO: Change Tool and Armor material values to fit Netherion.
+    // TODO: Finish Netherion.
     //public static Item.ToolMaterial netherion = EnumHelper.addToolMaterial("Netherion", 2, 400, 6.5f, 3.0f, 15);
     //public static ItemArmor.ArmorMaterial netherionArmor = EnumHelper.addArmorMaterial("Netherion", 22, new int[] { 2, 5, 3, 2 }, 13);
     //public static Item netherionIngot = new NetherionIngot(9000);
@@ -129,10 +136,27 @@ public class ModItems {
     //public static Item netherionAxe = new NetherionAxe(9003, netherion);
     //public static Item netherionSword = new NetherionSword(9004, netherion);
     //public static Item netherionHoe = new NetherionHoe(9005, netherion);
-    //public static Item netherionHelmet = new NetherionArmor("netherionHelmet", "netherionhelmet", flintArmor, 0);
+    //public static Item netherionHelmet = new NetherionArmor("netherionHelmet", "netherionhelmet", netherionArmor, 0);
     //public static Item netherionChestPlate = new NetherionArmor("netherionChestplate", "netherionchestplate", netherionArmor, 1);
     //public static Item netherionLeggings = new NetherionArmor("netherionLeggings", "netherionleggings", netherionArmor, 2);
     //public static Item netherionBoots = new NetherionArmor("netherionBoots", "netherionboots", netherionArmor, 3);
+
+    // Quartz
+    // TODO: Change Tool and Armor material values to fit Quartz.
+    // TODO: Finish Quartz.
+    //public static Item.ToolMaterial quartz = EnumHelper.addToolMaterial("Quartz", 2, 400, 6.5f, 3.0f, 15);
+    //public static ItemArmor.ArmorMaterial quartzArmor = EnumHelper.addArmorMaterial("Quartz", 22, new int[] { 2, 5, 3, 2 }, 13);
+    //public static Item quartzIngot = new QuartzIngot(9000);
+    //public static Item quartzNugget = new QuartzNugget(9001);
+    //public static Item quartzPickaxe = new QuartzPickaxe(9002, quartz);
+    //public static Item quartzShovel = new QuartzShovel(9002, quartz);
+    //public static Item quartzAxe = new QuartzAxe(9003, quartz);
+    //public static Item quartzSword = new QuartzSword(9004, quartz);
+    //public static Item quartzHoe = new QuartzHoe(9005, quartz);
+    //public static Item quartzHelmet = new QuartzArmor("quartzHelmet", "quartzhelmet", quartzArmor, 0);
+    //public static Item quartzChestPlate = new QuartzArmor("quartzChestplate", "quartzchestplate", quartzArmor, 1);
+    //public static Item quartzLeggings = new QuartzArmor("quartzLeggings", "quartzleggings", quartzArmor, 2);
+    //public static Item quartzBoots = new QuartzArmor("quartzBoots", "quartzboots", quartzArmor, 3);
 
     public static void init() {
 
@@ -141,14 +165,17 @@ public class ModItems {
         GameRegistry.registerItem(LuckyStar, "Lucky Star");
 
         // Ingots
+        // TODO: Make Textures for remaining Ingots before being re-enabled.
         GameRegistry.registerItem(boneIngot, "Bone Ingot");
         GameRegistry.registerItem(redstoneIngot, "Redstone Ingot");
         GameRegistry.registerItem(enderionIngot, "Enderion Ingot");
         GameRegistry.registerItem(lapisIngot, "Lapis Ingot");
         //GameRegistry.registerItem(flintIngot, "Flint Ingot");
         //GameRegistry.registerItem(netherionIngot, "Netherion Ingot");
+        //GameRegistry.registerItem(quartzIngot, "Quartz Ingot");
 
         // Nuggets
+        // TODO: Make Textures for remaining Nuggets before being re-enabled.
         //GameRegistry.registerItem(emeraldNugget, "Emerald Nugget");
         //GameRegistry.registerItem(redstoneNugget, "Redstone Nugget");
         //GameRegistry.registerItem(boneNugget, "Bone Nugget");
@@ -188,6 +215,7 @@ public class ModItems {
         GameRegistry.registerItem(enderionHoe, "Enderion Hoe");
 
         // Lapis
+        // TODO: Make Textures for Lapis before being re-enabled.
         //GameRegistry.registerItem(lapisPickaxe, "Lapis Pickaxe");
         //GameRegistry.registerItem(lapisShovel, "Lapis Shovel");
         //GameRegistry.registerItem(lapisAxe, "Lapis Axe");
@@ -195,6 +223,7 @@ public class ModItems {
         GameRegistry.registerItem(lapisHoe, "Lapis Hoe");
 
         // Flint
+        // TODO: Make Textures for Flint before being re-enabled.
         //GameRegistry.registerItem(flintPickaxe, "Flint Pickaxe");
         //GameRegistry.registerItem(flintShovel, "Flint Shovel");
         //GameRegistry.registerItem(flintAxe, "Flint Axe");
@@ -202,11 +231,20 @@ public class ModItems {
         //GameRegistry.registerItem(flintHoe, "Flint Hoe");
 
         // Netherion
+        // TODO: Make Textures for Netherion before being re-enabled.
         //GameRegistry.registerItem(netherionPickaxe, "Netherion Pickaxe");
         //GameRegistry.registerItem(netherionShovel, "Netherion Shovel");
         //GameRegistry.registerItem(netherionAxe, "Netherion Axe");
         //GameRegistry.registerItem(netherionSword, "Netherion Sword");
         //GameRegistry.registerItem(netherionHoe, "Netherion Hoe");
+
+        // Quartz
+        // TODO: Make Textures for Quartz before being re-enabled.
+        //GameRegistry.registerItem(quartzPickaxe, "Quartz Pickaxe");
+        //GameRegistry.registerItem(quartzShovel, "Quartz Shovel");
+        //GameRegistry.registerItem(quartzAxe, "Quartz Axe");
+        //GameRegistry.registerItem(quartzSword, "Quartz Sword");
+        //GameRegistry.registerItem(quartzHoe, "Quartz Hoe");
 
         // Armor
         // Emerald
@@ -228,6 +266,7 @@ public class ModItems {
         GameRegistry.registerItem(boneBoots, "Bone Boots");
 
         // Enderion
+        // TODO: Make Textures for Enderion before being re-enabled.
         //GameRegistry.registerItem(enderionHelmet, "Enderion Helmet");
         //GameRegistry.registerItem(enderionChestplate, "Enderion Chestplate");
         //GameRegistry.registerItem(enderionLeggings, "Enderion Leggings");
@@ -240,15 +279,24 @@ public class ModItems {
         GameRegistry.registerItem(lapisBoots, "Lapis Boots");
 
         // Flint
+        // TODO: Make Textures for Flint before being re-enabled.
         //GameRegistry.registerItem(flintHelmet, "Flint Helmet");
         //GameRegistry.registerItem(flintChestplate, "Flint Chestplate");
         //GameRegistry.registerItem(flintLeggings, "Flint Leggings");
         //GameRegistry.registerItem(flintBoots, "Flint Boots");
 
         // Netherion
+        // TODO: Make Textures for Netherion before being re-enabled.
         //GameRegistry.registerItem(netherionHelmet, "Netherion Helmet");
-        //GameRegistry.registerItem(netherionChestPlate, "Netherion Chestplate");
+        //GameRegistry.registerItem(netherionChestplate, "Netherion Chestplate");
         //GameRegistry.registerItem(netherionLeggings, "Netherion Leggings");
         //GameRegistry.registerItem(netherionBoots, "Netherion Boots");
+
+        // Quartz
+        // TODO: Make Textures for Quartz before being re-enabled.
+        //GameRegistry.registerItem(quartzHelmet, "Quartz Helmet");
+        //GameRegistry.registerItem(quartzChestplate, "Quartz Chestplate");
+        //GameRegistry.registerItem(quartzLeggings, "Quartz Leggings");
+        //GameRegistry.registerItem(quartzBoots, "Quartz Boots");
     }
 }

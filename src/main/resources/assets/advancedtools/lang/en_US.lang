@@ -1,4 +1,5 @@
 // Items
+// Food
 item.advancedtools:Strawberry.name=Strawberry
 item.advancedtools:LuckyStar.name=Lucky Star
 
@@ -52,6 +53,13 @@ item.advancedtools:NetherionShovel.name=Netherion Shovel
 item.advancedtools:NetherionSword.name=Netherion Sword
 item.advancedtools:NetherionHoe.name=Netherion Hoe
 
+// Quartz
+item.advancedtools:QuartzPickaxe.name=Quartz Pickaxe
+item.advancedtools:QuartzAxe.name=Quartz Axe
+item.advancedtools:QuartzShovel.name=Quartz Shovel
+item.advancedtools:QuartzSword.name=Quartz Sword
+item.advancedtools:QuartzHoe.name=Quartz Hoe
+
 // Ingots
 item.advancedtools:BoneIngot.name=Bone Ingot
 item.advancedtools:RedstoneIngot.name=Redstone Ingot
@@ -59,6 +67,7 @@ item.advancedtools:EnderionIngot.name=Enderion Ingot
 item.advancedtools:LapisIngot.name=Lapis Ingot
 item.advancedtools:FlintIngot.name=Flint Ingot
 item.advancedtools:NetherionIngot.name=Netherion Ingot
+item.advancedtools:QuartzIngot.name=Quartz Ingot
 
 // Armor
 // Emerald
@@ -103,6 +112,12 @@ item.advancedtools:netherionChestplate.name=Netherion Chestplate
 item.advancedtools:netherionLeggings.name=Netherion Leggings
 item.advancedtools:netherionBoots.name=Netherion Boots
 
+// Quartz
+item.advancedtools:quartzHelmet.name=Quartz Helmet
+item.advancedtools:quartzChestplate.name=Quartz Chestplate
+item.advancedtools:quartzLeggings.name=Quartz Leggings
+item.advancedtools:quartzBoots.name=Quartz Boots
+
 // Nuggets
 item.advancedtools:EmeraldNugget.name=Emerald Nugget
 item.advancedtools:RedstoneNugget.name=Redstone Nugget
@@ -111,6 +126,7 @@ item.advancedtools:EnderionNugget.name=Enderion Nugget
 item.advancedtools:LapisNugget.name=Lapis Nugget
 item.advancedtools:FlintNugget.name=Flint Nugget
 item.advancedtools:NetherionNugget.name=Netherion Nugget
+item.advancedtools:QuartzNugget.name=Quartz Nugget
 
 // Blocks
 tile.advancedtools:StrawberryCrop.name=Strawberry Crop
