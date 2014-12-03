@@ -1,4 +1,4 @@
-package mantle.pulsar.control;
+package com.zandor300.advancedtools.pulsar.control;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
