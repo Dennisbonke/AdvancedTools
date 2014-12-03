@@ -1,3 +1,14 @@
+version 0.5.0:
+added lapis armor, ingot, sword and hoe
+added more recipes
+fixing bugs
+more prepwork
+commented out the f5 models for lapis, bone and redstone armor,
+addded more creative tabs
+deprecated all the foodstuff
+fixed more recipes
+preparation for quartz and netherion stuff
+
 version 0.4.0:
 added bone and redstone armor, temporarily using emerald models
 changed up oredictionary
