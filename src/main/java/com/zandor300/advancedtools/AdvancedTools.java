@@ -5,13 +5,12 @@ import com.zandor300.advancedtools.init.always.ModBlocks;
 import com.zandor300.advancedtools.init.always.ModItems;
 import com.zandor300.advancedtools.init.always.Oredictionary;
 import com.zandor300.advancedtools.init.always.Recipes;
-import com.zandor300.advancedtools.plugins.ATIC2;
+import com.zandor300.advancedtools.plugins.te4.ATTE4;
 import com.zandor300.advancedtools.proxy.ServerProxy;
 import com.zandor300.advancedtools.pulsar.config.ForgeCFG;
 import com.zandor300.advancedtools.pulsar.control.PulseManager;
 import com.zandor300.advancedtools.reference.Reference;
 import com.zandor300.advancedtools.utilities.LogHelper;
-import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -25,13 +24,13 @@ public class AdvancedTools {
 
 	public static PulseManager pulsar = new PulseManager(Reference.MOD_ID, new ForgeCFG("TinkersModules", "Modules: Disabling these will disable a chunk of the mod"));
 
-	public AdvancedTools() {
+	/*public AdvancedTools() {
 		if (Loader.isModLoaded("Thermal Expansion")) {
 			LogHelper.info("TE found, stay tuned!");
 		} else {
 			LogHelper.info("TE not found :(");
 		}
-	}
+	}*/
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
@@ -46,16 +45,17 @@ public class AdvancedTools {
 		Oredictionary.init();
 
 		// Initialize Blocks
-       	ModBlocks.init();
+		ModBlocks.init();
 
 		// Initialize Items
-        ModItems.init();
+		ModItems.init();
 
 		// Register plugins
-		pulsar.registerPulse(new ATIC2());
+		pulsar.registerPulse(new ATTE4());
 
-        LogHelper.info("Pre Initialization Complete!");
+		LogHelper.info("Pre Initialization Complete!");
 	}
+
 	// register Frankenstein Mob
 	/*private static void registerEntity(Class<? extends Entity> class1,
 			String entityName, int bkEggColor, int fgEggColor) {
@@ -73,13 +73,14 @@ public class AdvancedTools {
 					EnumCreatureType.creature, biomes);
 	}
 
-	*/@EventHandler
+	*/
+	@EventHandler
 	public static void Init(FMLInitializationEvent event) {
 
 		// Initialize Recipes
 		Recipes.init();
 
-        LogHelper.info("Initialization Complete!");
+		LogHelper.info("Initialization Complete!");
 	}
 
 	@EventHandler
@@ -87,14 +88,14 @@ public class AdvancedTools {
 
 		LogHelper.info("Post Initialization Complete!");
 	}
+
 	@EventHandler
-	public void handleIMC(FMLInterModComms.IMCEvent e)
-	{
+	public void handleIMC(FMLInterModComms.IMCEvent e) {
 		IMCHandler.processIMC(e.getMessages());
 	}
+
 	@EventHandler
-	public void loadComplete(FMLLoadCompleteEvent evt)
-	{
+	public void loadComplete(FMLLoadCompleteEvent evt) {
 		IMCHandler.processIMC(FMLInterModComms.fetchRuntimeMessages(this));
 	}
 }
