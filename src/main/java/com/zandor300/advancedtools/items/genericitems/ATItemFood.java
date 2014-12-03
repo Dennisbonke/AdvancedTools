@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 
+@Deprecated
 public class ATItemFood extends ItemFood{
 
     public ATItemFood(int id, boolean b) {

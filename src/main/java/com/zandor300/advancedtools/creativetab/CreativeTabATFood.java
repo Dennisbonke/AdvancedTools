@@ -5,6 +5,7 @@ import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
+@Deprecated
 public class CreativeTabATFood {
     public static final CreativeTabs tab = new CreativeTabs(Reference.MOD_ID) {
         @Override
