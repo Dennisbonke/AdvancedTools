@@ -5,7 +5,7 @@ import com.zandor300.advancedtools.init.always.ModBlocks;
 import com.zandor300.advancedtools.init.always.ModItems;
 import com.zandor300.advancedtools.init.always.Oredictionary;
 import com.zandor300.advancedtools.init.always.Recipes;
-import com.zandor300.advancedtools.plugins.te4.ATTE4;
+import com.zandor300.advancedtools.plugins.ATTE4;
 import com.zandor300.advancedtools.proxy.ServerProxy;
 import com.zandor300.advancedtools.pulsar.config.ForgeCFG;
 import com.zandor300.advancedtools.pulsar.control.PulseManager;
