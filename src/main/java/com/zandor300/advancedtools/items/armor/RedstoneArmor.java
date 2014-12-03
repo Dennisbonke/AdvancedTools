@@ -15,7 +15,7 @@ public class RedstoneArmor extends ATItemArmor{
         this.setTextureName(Reference.MOD_ID + ":" + texture);
     }
 
-    @Override
+    /*@Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot,
                                   String type) {
         if (stack.getItem() == ModItems.redstoneHelmet
@@ -25,5 +25,5 @@ public class RedstoneArmor extends ATItemArmor{
         if (stack.getItem() == ModItems.redstoneLeggings)
             return Reference.MOD_ID + ":textures/models/armor/emerald_2.png";
         return null;
-    }
+    }*/
 }

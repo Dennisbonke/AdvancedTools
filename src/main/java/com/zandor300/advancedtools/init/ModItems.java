@@ -93,7 +93,7 @@ public class ModItems {
     // Lapis
     // TODO: Change Tool and Armor material values to fit Lapis.
     // TODO: Finish Lapis.
-    public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 3, 600, 7.5f, 3.0f, 20);
+    public static Item.ToolMaterial lapis = EnumHelper.addToolMaterial("Lapis", 2, 600, 7.5f, 3.0f, 20);
     public static ItemArmor.ArmorMaterial lapisArmor = EnumHelper.addArmorMaterial("Lapis", 25, new int[] { 3, 6, 5, 3 }, 25);
     public static Item lapisIngot = new LapisIngot(7000);
     //public static Item lapisNugget = new LapisNugget(7006);
