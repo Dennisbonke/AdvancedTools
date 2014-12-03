@@ -1,4 +1,4 @@
-package com.zandor300.advancedtools.init;
+package com.zandor300.advancedtools.init.always;
 
 import com.zandor300.advancedtools.items.armor.*;
 import com.zandor300.advancedtools.items.food.LuckyStar;

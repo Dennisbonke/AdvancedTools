@@ -1,9 +1,5 @@
 package com.zandor300.advancedtools.pulsar.control;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.*;
-
 import com.zandor300.advancedtools.pulsar.config.IConfiguration;
 import com.zandor300.advancedtools.pulsar.internal.Configuration;
 import com.zandor300.advancedtools.pulsar.internal.logging.ILogger;
@@ -15,6 +11,11 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 /**
  * Manager class for a given mods Pulses.
  *
@@ -25,7 +26,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @SuppressWarnings({"unused", "deprecated"})
 public class PulseManager {
 
-    private final ILogger log;
+     private final ILogger log;
     private final boolean useConfig;
 
     private final LinkedHashMap<Object, PulseMeta> pulses = new LinkedHashMap<Object, PulseMeta>();
@@ -36,7 +37,7 @@ public class PulseManager {
 
     /**
      * Configuration-less constructor.
-     *
+     * <p/>
      * PulseManagers created this way ignore configurability on child Pulses. This is not recommended.
      *
      * @param modId The parents ModID.
@@ -50,10 +51,10 @@ public class PulseManager {
 
     /**
      * Configuration-using constructor.
-     *
+     * <p/>
      * This form creates a PulseManager that supports configuration of Pulses by file. Recommended approach.
      *
-     * @param modId The parents ModID.
+     * @param modId      The parents ModID.
      * @param configName The config file name.
      */
     public PulseManager(String modId, String configName) {
@@ -64,11 +65,11 @@ public class PulseManager {
 
     /**
      * Custom configuration-using constructor.
-     *
+     * <p/>
      * Don't like JSON? Heathen. Lets you handle configuration, to whatever media you like - File, database, death star.
      * Whatever really. See {@link com.zandor300.advancedtools.pulsar.config.IConfiguration}.
      *
-     * @param modId The parents ModID.
+     * @param modId  The parents ModID.
      * @param config Configuration handler.
      */
     public PulseManager(String modId, IConfiguration config) {
@@ -79,7 +80,7 @@ public class PulseManager {
 
     /**
      * Register a new Pulse with the manager.
-     *
+     * <p/>
      * This CANNOT be done after preInit() has been invoked.
      *
      * @param pulse The Pulse to register.
@@ -137,9 +138,8 @@ public class PulseManager {
     }
 
     /**
-     * @deprecated FML handles proxies now.
-     *
      * @param pulse Pulse to parse for proxy annotations.
+     * @deprecated FML handles proxies now.
      */
     @Deprecated
     private void parseAndAddProxies(Object pulse) {
@@ -177,10 +177,10 @@ public class PulseManager {
         blockNewRegistrations = true;
 
         for (Map.Entry<Object, PulseMeta> e : pulses.entrySet()) {
-            if(hasRequiredPulses(e)) {
+            if (hasRequiredPulses(e)) {
                 log.debug("Preinitialising Pulse " + e.getValue().getId() + "...");
                 if (e.getKey() instanceof IPulse) { // Deprecated IPulse handling
-                    IPulse ip = (IPulse)e.getKey();
+                    IPulse ip = (IPulse) e.getKey();
                     ip.preInit(evt);
                 } else findAndInvokeHandlers(e.getKey(), evt);
             }
@@ -192,7 +192,7 @@ public class PulseManager {
             log.debug("Initialising Pulse " + e.getValue().getId() + "...");
 
             if (e.getKey() instanceof IPulse) { // Deprecated IPulse handling
-                IPulse ip = (IPulse)e.getKey();
+                IPulse ip = (IPulse) e.getKey();
                 ip.init(evt);
                 log.warn("Pulse " + e.getValue().getId() + " is using the deprecated IPulse interface.");
                 log.warn("This will be removed in the next major version (Pulsar 1.x) - Please switch to @Handler!");
@@ -205,7 +205,7 @@ public class PulseManager {
             log.debug("Postinitialising Pulse " + e.getValue().getId() + "...");
 
             if (e.getKey() instanceof IPulse) { // Deprecated IPulse handling
-                IPulse ip = (IPulse)e.getKey();
+                IPulse ip = (IPulse) e.getKey();
                 ip.postInit(evt);
             } else findAndInvokeHandlers(e.getKey(), evt);
         }
@@ -215,7 +215,7 @@ public class PulseManager {
      * Parse an object for a matching handler for the given object.
      *
      * @param pulse Object to inspect for Handlers
-     * @param evt The event object
+     * @param evt   The event object
      */
     @SuppressWarnings("unchecked")
     private void findAndInvokeHandlers(Object pulse, Object evt) {
@@ -252,8 +252,8 @@ public class PulseManager {
     }
 
     public boolean isPulseLoaded(String pulseId) {
-        for(Map.Entry<Object, PulseMeta> entry : pulses.entrySet()) {
-            if(entry.getValue().getId().equals(pulseId)) {
+        for (Map.Entry<Object, PulseMeta> entry : pulses.entrySet()) {
+            if (entry.getValue().getId().equals(pulseId)) {
                 return true;
             }
         }

@@ -1,4 +1,4 @@
-package com.zandor300.advancedtools.init;
+package com.zandor300.advancedtools.init.always;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemStack;

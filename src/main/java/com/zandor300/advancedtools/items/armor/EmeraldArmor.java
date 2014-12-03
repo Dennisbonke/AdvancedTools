@@ -1,6 +1,6 @@
 package com.zandor300.advancedtools.items.armor;
 
-import com.zandor300.advancedtools.init.ModItems;
+import com.zandor300.advancedtools.init.always.ModItems;
 import com.zandor300.advancedtools.items.genericitems.ATItemArmor;
 import com.zandor300.advancedtools.reference.Reference;
 import net.minecraft.entity.Entity;

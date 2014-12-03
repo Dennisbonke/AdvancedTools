@@ -1,4 +1,4 @@
-package com.zandor300.advancedtools.init;
+package com.zandor300.advancedtools.init.always;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;

@@ -1,34 +1,29 @@
 package com.zandor300.advancedtools;
 
 import com.zandor300.advancedtools.handler.IMCHandler;
-import com.zandor300.advancedtools.init.ModBlocks;
-import com.zandor300.advancedtools.init.ModItems;
-import com.zandor300.advancedtools.init.Oredictionary;
-import com.zandor300.advancedtools.init.Recipes;
+import com.zandor300.advancedtools.init.always.ModBlocks;
+import com.zandor300.advancedtools.init.always.ModItems;
+import com.zandor300.advancedtools.init.always.Oredictionary;
+import com.zandor300.advancedtools.init.always.Recipes;
+import com.zandor300.advancedtools.plugins.ATIC2;
+import com.zandor300.advancedtools.proxy.ServerProxy;
+import com.zandor300.advancedtools.pulsar.config.ForgeCFG;
+import com.zandor300.advancedtools.pulsar.control.PulseManager;
 import com.zandor300.advancedtools.reference.Reference;
 import com.zandor300.advancedtools.utilities.LogHelper;
 import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.event.*;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityList;
-import net.minecraft.entity.EntityList.EntityEggInfo;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.EnumCreatureType;
-import net.minecraft.world.biome.BiomeGenBase;
-
-import com.zandor300.advancedtools.mobs.FrankensteinMob;
-import com.zandor300.advancedtools.proxy.ServerProxy;
-
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.event.*;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class AdvancedTools {
 
 	@SidedProxy(clientSide = Reference.CLIENTSIDE, serverSide = Reference.SERVERSIDE)
 	public static ServerProxy Proxy;
+
+	public static PulseManager pulsar = new PulseManager(Reference.MOD_ID, new ForgeCFG("TinkersModules", "Modules: Disabling these will disable a chunk of the mod"));
 
 	public AdvancedTools() {
 		if (Loader.isModLoaded("Thermal Expansion")) {
@@ -55,6 +50,9 @@ public class AdvancedTools {
 
 		// Initialize Items
         ModItems.init();
+
+		// Register plugins
+		pulsar.registerPulse(new ATIC2());
 
         LogHelper.info("Pre Initialization Complete!");
 	}

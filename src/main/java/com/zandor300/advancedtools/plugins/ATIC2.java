@@ -8,7 +8,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
-@Pulse(id = "Tinkers IC2 Compatibility", description = "Tinkers Construct compatibility for IndustrialCraft 2", modsRequired = "IC2", forced = true)
+@Pulse(id = "Advanced Tools IC2 Compatibility", description = "Advanced Tools compatibility for IndustrialCraft 2", modsRequired = "IC2", forced = true)
 public class ATIC2 {
     @Handler
     public void init (FMLInitializationEvent event)

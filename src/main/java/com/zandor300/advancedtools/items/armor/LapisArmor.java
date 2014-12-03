@@ -1,11 +1,8 @@
 package com.zandor300.advancedtools.items.armor;
 
 import com.zandor300.advancedtools.creativetab.CreativeTabATTools;
-import com.zandor300.advancedtools.init.ModItems;
 import com.zandor300.advancedtools.items.genericitems.ATItemArmor;
 import com.zandor300.advancedtools.reference.Reference;
-import net.minecraft.entity.Entity;
-import net.minecraft.item.ItemStack;
 
 public class LapisArmor extends ATItemArmor{
     public LapisArmor(String name, String texture, ArmorMaterial material, int j) {
