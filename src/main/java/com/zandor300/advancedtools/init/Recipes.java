@@ -27,6 +27,12 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.boneLeggings), "bbb", "b b", "b b", 'b', "ingotBone"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.boneBoots), "   ", "b b", "b b", 'b', "ingotBone"));
 
+        // Lapis
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisHelmet), "lll", "l l", "   ", 'l', "ingotLapis"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisChestplate), "l l", "lll", "lll", 'l', "ingotLapis"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisLeggings), "lll", "l l", "l l", 'l', "ingotLapis"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisBoots), "   ", "l l", "l l", 'l', "ingotLapis"));
+
         // Tools
         // Emerald
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.emeraldAxe), "ee ", "es ", " s ", 'e', "gemEmerald", 's', "stickWood"));
@@ -57,12 +63,13 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.enderionHoe), "ee ", " s ", " s ", 'e', "ingotEnderion", 's', "stickWood"));
 
         // Lapis
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisSword), " l ", " l ", " s ", 'l', "gemLapis", 's', "stickWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisHoe), "ll ", " s ", " s ", 'l', "gemLapis", 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisSword), " l ", " l ", " s ", 'l', "ingotLapis", 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisHoe), "ll ", " s ", " s ", 'l', "ingotLapis", 's', "stickWood"));
 
         // Ingots
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.redstoneIngot, 3), "rrr", "rir", "rrr", 'r', "dustRedstone", 'i', "ingotIron"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.boneIngot, 3), "bbb", "bib", "bbb", 'b', "dyeWhite", 'i', "ingotIron"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.enderionIngot, 3), "eee", "eie", "eee", 'e', "materialEnderPearl", 'i', "ingotIron"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lapisIngot, 3), "lll", "lil", "lll", 'l', "gemLapis", 'i', "ingotIron"));
     }
 }
