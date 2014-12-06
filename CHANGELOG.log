@@ -1,3 +1,9 @@
+version 0.6.0:
+DBLib is now an required dependency
+removed duplicate classes
+updated README
+changed Reference for future use
+
 version 0.5.0:
 added lapis armor, ingot, sword and hoe
 added more recipes

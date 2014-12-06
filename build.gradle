@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10-0.5.0"
+version = "1.7.10-0.6.0"
 group= "com.zandor300.advancedtools" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Advanced Tools"
 
@@ -40,6 +40,8 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+    compile files("./libs/DBLib-1.7.10-0.1.0.jar")
+
 }
 
 processResources
@@ -60,4 +62,8 @@ processResources
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+}
+tasks.withType(JavaCompile)	{
+    sourceCompatibility = "1.7"
+    targetCompatibility = "1.7"
 }

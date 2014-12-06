@@ -4,11 +4,20 @@ AdvancedTools Mod!
 
 Jenkins: http://play.zsinfo.nl:8080/job/AdvancedTools/
 
+<h2>Important!</h2>
+Java 7 is required, java 6 will NOT work!<br>
+Required version of DBLib: 0.1.0.
+
+<h2>How to contribute</h2>
+- Download the latest copy of DBLib and place it somewhere easy.
+- Fork this repository.
+- Setup your development environment.
+- In IntelliJ, go to File, Project Structure, Project Libraries and add DBLib as a library.
+- You're good to go!
 
 <h2>Authors</h2>
 
 <h3>Zandor Smith</h3>
-
 
 - Github: https://github.com/Zandor300
 - Twitter: http://twitter.com/zandor300

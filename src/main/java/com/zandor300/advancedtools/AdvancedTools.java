@@ -1,5 +1,8 @@
 package com.zandor300.advancedtools;
 
+import com.dennisbonke.dblib.pulsar.config.ForgeCFG;
+import com.dennisbonke.dblib.pulsar.control.PulseManager;
+import com.dennisbonke.dblib.util.LogHelper;
 import com.zandor300.advancedtools.handler.IMCHandler;
 import com.zandor300.advancedtools.init.always.ModBlocks;
 import com.zandor300.advancedtools.init.always.ModItems;
@@ -7,22 +10,23 @@ import com.zandor300.advancedtools.init.always.Oredictionary;
 import com.zandor300.advancedtools.init.always.Recipes;
 import com.zandor300.advancedtools.plugins.ATTE4;
 import com.zandor300.advancedtools.proxy.ServerProxy;
-import com.zandor300.advancedtools.pulsar.config.ForgeCFG;
-import com.zandor300.advancedtools.pulsar.control.PulseManager;
 import com.zandor300.advancedtools.reference.Reference;
-import com.zandor300.advancedtools.utilities.LogHelper;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "required-after:Forge@10.13.2.1240,);after:DBLib", modLanguage = "java", canBeDeactivated = false)
 public class AdvancedTools {
 
 	@SidedProxy(clientSide = Reference.CLIENTSIDE, serverSide = Reference.SERVERSIDE)
 	public static ServerProxy Proxy;
 
-	public static PulseManager pulsar = new PulseManager(Reference.MOD_ID, new ForgeCFG("TinkersModules", "Modules: Disabling these will disable a chunk of the mod"));
+	public static PulseManager pulsar = new PulseManager(Reference.MOD_ID, new ForgeCFG("AdvancedToolsModules", "Modules: Disabling these will disable a chunk of the mod"));
+
+	public static Logger logger = LogManager.getLogger(Reference.MOD_ID);
 
 	/*public AdvancedTools() {
 		if (Loader.isModLoaded("Thermal Expansion")) {
@@ -34,6 +38,9 @@ public class AdvancedTools {
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
+
+		logger = (Logger) new LogHelper(Reference.MOD_NAME);
+
 		// Render Info
 		//Proxy.registerRenderInfo();
 
