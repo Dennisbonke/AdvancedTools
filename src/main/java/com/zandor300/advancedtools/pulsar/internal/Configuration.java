@@ -14,7 +14,7 @@ import com.zandor300.advancedtools.pulsar.internal.logging.ILogger;
 import com.zandor300.advancedtools.pulsar.pulse.PulseMeta;
 
 /**
- * Default Gson Configuration helper.
+ * Default Gson Configuration helpers.
  *
  * @author Arkan <arkan@drakon.io>
  */
