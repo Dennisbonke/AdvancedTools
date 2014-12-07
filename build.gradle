@@ -20,6 +20,9 @@ apply plugin: 'forge'
 version = "1.7.10-0.6.0"
 group= "com.zandor300.advancedtools" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Advanced Tools"
+dependencies {
+    compile fileTree(dir:'deps',include:'*.jar')
+}
 
 minecraft {
     version = "1.7.10-10.13.2.1240"
@@ -39,8 +42,6 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-
-    compile files("./libs/DBLib-1.7.10-0.1.0.jar")
 
 }
 

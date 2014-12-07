@@ -18,7 +18,7 @@ import cpw.mods.fml.common.event.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "required-after:Forge@10.13.2.1240,);after:DBLib", modLanguage = "java", canBeDeactivated = false)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "after:DBLib", modLanguage = "java", canBeDeactivated = false)
 public class AdvancedTools {
 
 	@SidedProxy(clientSide = Reference.CLIENTSIDE, serverSide = Reference.SERVERSIDE)
@@ -38,8 +38,6 @@ public class AdvancedTools {
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
-
-		logger = (Logger) new LogHelper(Reference.MOD_NAME);
 
 		// Render Info
 		//Proxy.registerRenderInfo();

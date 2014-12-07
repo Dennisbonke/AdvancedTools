@@ -9,10 +9,9 @@ Java 7 is required, java 6 will NOT work!<br>
 Required version of DBLib: 0.1.0.
 
 <h2>How to contribute</h2>
-- Download the latest copy of DBLib and place it somewhere easy.
 - Fork this repository.
 - Setup your development environment.
-- In IntelliJ, go to File, Project Structure, Project Libraries and add DBLib as a library.
+- In IntelliJ, go to File, Project Structure, Project Libraries and add DBLib as a library, DBLib can be found in the "deps" folder.
 - You're good to go!
 
 <h2>Authors</h2>
