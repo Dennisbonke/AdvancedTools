@@ -5,4 +5,10 @@ public class ServerProxy {
 	public void registerRenderInfo() {
 
 	}
+	public void preInit(){
+
+	}
+	public void Init(){
+
+	}
 }

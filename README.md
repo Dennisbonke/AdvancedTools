@@ -6,7 +6,7 @@ Jenkins: http://play.zsinfo.nl:8080/job/AdvancedTools/
 
 <h2>Important!</h2>
 Java 7 is required, java 6 will NOT work!<br>
-Required version of DBLib: 0.1.0.
+Required version of DBLib: 0.3.0.
 
 <h2>How to contribute</h2>
 - Fork this repository.

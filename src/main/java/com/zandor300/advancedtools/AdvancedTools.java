@@ -1,13 +1,9 @@
 package com.zandor300.advancedtools;
 
+import com.dennisbonke.dblib.handler.IMCHandler;
 import com.dennisbonke.dblib.pulsar.config.ForgeCFG;
 import com.dennisbonke.dblib.pulsar.control.PulseManager;
 import com.dennisbonke.dblib.util.LogHelper;
-import com.zandor300.advancedtools.handler.IMCHandler;
-import com.zandor300.advancedtools.init.always.ModBlocks;
-import com.zandor300.advancedtools.init.always.ModItems;
-import com.zandor300.advancedtools.init.always.Oredictionary;
-import com.zandor300.advancedtools.init.always.Recipes;
 import com.zandor300.advancedtools.plugins.ATTE4;
 import com.zandor300.advancedtools.proxy.ServerProxy;
 import com.zandor300.advancedtools.reference.Reference;
@@ -46,14 +42,8 @@ public class AdvancedTools {
 		//registerEntity(FrankensteinMob.class, "Frankenstein", 0xeaeae9,
 		//		0xc99a03);
 
-		// Oredictionary
-		Oredictionary.init();
-
-		// Initialize Blocks
-		ModBlocks.init();
-
-		// Initialize Items
-		ModItems.init();
+		// Do preInit stuff
+		Proxy.preInit();
 
 		// Register plugins
 		pulsar.registerPulse(new ATTE4());
@@ -76,14 +66,14 @@ public class AdvancedTools {
 		if (spawnProb > 0)
 			EntityRegistry.addSpawn(entityClass, spawnProb, min, max,
 					EnumCreatureType.creature, biomes);
-	}
+	}*/
 
-	*/
+
 	@EventHandler
 	public static void Init(FMLInitializationEvent event) {
 
-		// Initialize Recipes
-		Recipes.init();
+		// Do Init stuff
+		Proxy.Init();
 
 		LogHelper.info("Initialization Complete!");
 	}
