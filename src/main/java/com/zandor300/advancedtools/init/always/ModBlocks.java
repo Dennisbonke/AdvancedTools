@@ -1,12 +1,9 @@
 package com.zandor300.advancedtools.init.always;
 
-import com.zandor300.advancedtools.blocks.CreateBlock;
-import com.zandor300.advancedtools.blocks.crops.StrawberryCrop;
+import com.zandor300.advancedtools.blocks.BlockCopper;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
@@ -20,6 +17,7 @@ public class ModBlocks {
     //        "LuckyStarBlock", "luckystar", 2001, Material.glass,
     //        CreativeTabs.tabBlock, 4f, 5f, 1f);
     //public static Block StrawberryCrop = new StrawberryCrop(3001);
+    public static final Block BlockCopper = new BlockCopper();
 
 
     public static void init() {
@@ -27,5 +25,6 @@ public class ModBlocks {
         //GameRegistry.registerBlock(Lamp, "Lamp");
         //GameRegistry.registerBlock(LuckyStarBlock, "Lucky Star Block");
         //GameRegistry.registerBlock(StrawberryCrop, "Strawberry Crop");
+        GameRegistry.registerBlock(BlockCopper, "Copper Block");
     }
 }
