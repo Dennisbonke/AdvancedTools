@@ -68,6 +68,7 @@ item.advancedtools:LapisIngot.name=Lapis Ingot
 item.advancedtools:FlintIngot.name=Flint Ingot
 item.advancedtools:NetherionIngot.name=Netherion Ingot
 item.advancedtools:QuartzIngot.name=Quartz Ingot
+item.advancedtools:CopperIngot.name=Copper Ingot
 
 // Armor
 // Emerald

@@ -1,15 +1,18 @@
 package com.zandor300.advancedtools.init.always;
 
-import com.zandor300.advancedtools.items.armor.*;
+import com.zandor300.advancedtools.items.armor.BoneArmor;
+import com.zandor300.advancedtools.items.armor.EmeraldArmor;
+import com.zandor300.advancedtools.items.armor.LapisArmor;
+import com.zandor300.advancedtools.items.armor.RedstoneArmor;
 import com.zandor300.advancedtools.items.food.LuckyStar;
 import com.zandor300.advancedtools.items.food.Strawberry;
 import com.zandor300.advancedtools.items.tools.bone.*;
 import com.zandor300.advancedtools.items.tools.emerald.*;
 import com.zandor300.advancedtools.items.tools.enderion.*;
 import com.zandor300.advancedtools.items.tools.ingot.*;
-import com.zandor300.advancedtools.items.tools.lapis.*;
-import com.zandor300.advancedtools.items.tools.netherion.*;
-import com.zandor300.advancedtools.items.tools.nuggets.*;
+import com.zandor300.advancedtools.items.tools.lapis.LapisHoe;
+import com.zandor300.advancedtools.items.tools.lapis.LapisSword;
+import com.zandor300.advancedtools.items.tools.nuggets.EnderionNugget;
 import com.zandor300.advancedtools.items.tools.redstone.*;
 import com.zandor300.advancedtools.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -158,6 +161,23 @@ public class ModItems {
     //public static Item quartzLeggings = new QuartzArmor("quartzLeggings", "quartzleggings", quartzArmor, 2);
     //public static Item quartzBoots = new QuartzArmor("quartzBoots", "quartzboots", quartzArmor, 3);
 
+    // Copper
+    // TODO: Change Tool and Armor material values to fit Copper.
+    // TODO: Finish Copper.
+    //public static Item.ToolMaterial copper = EnumHelper.addToolMaterial("Copper", 2, 400, 6.5f, 3.0f, 15);
+    //public static ItemArmor.ArmorMaterial copperArmor = EnumHelper.addArmorMaterial("Copper", 22, new int[] { 2, 5, 3, 2 }, 13);
+    public static Item copperIngot = new CopperIngot(9000);
+    //public static Item copperNugget = new CopperNugget(9001);
+    //public static Item copperPickaxe = new CopperPickaxe(9002, copper);
+    //public static Item copperShovel = new CopperShovel(9002, copper);
+    //public static Item copperAxe = new CopperAxe(9003, copper);
+    //public static Item copperSword = new CopperSword(9004, copper);
+    //public static Item copperHoe = new CopperHoe(9005, copper);
+    //public static Item copperHelmet = new CopperArmor("copperHelmet", "copperhelmet", copperArmor, 0);
+    //public static Item copperChestPlate = new CopperArmor("copperChestplate", "copperchestplate", copperArmor, 1);
+    //public static Item copperLeggings = new CopperArmor("copperLeggings", "copperleggings", copperArmor, 2);
+    //public static Item copperBoots = new CopperArmor("copperBoots", "copperboots", copperArmor, 3);
+
     public static void init() {
 
         // Food
@@ -173,6 +193,7 @@ public class ModItems {
         //GameRegistry.registerItem(flintIngot, "Flint Ingot");
         //GameRegistry.registerItem(netherionIngot, "Netherion Ingot");
         //GameRegistry.registerItem(quartzIngot, "Quartz Ingot");
+        GameRegistry.registerItem(copperIngot, "Copper Ingot");
 
         // Nuggets
         // TODO: Make Textures for remaining Nuggets before being re-enabled.
@@ -184,6 +205,7 @@ public class ModItems {
         //GameRegistry.registerItem(flintNugget, "Flint Nugget");
         //GameRegistry.registerItem(netherionNugget, "Netherion Nugget");
         //GameRegistry.registerItem(quartzNugget, "Quartz Nugget");
+        //GameRegistry.registerItem(copperNugget, "Copper Nugget");
 
         // Tools
         // Emerald
@@ -246,6 +268,14 @@ public class ModItems {
         //GameRegistry.registerItem(quartzSword, "Quartz Sword");
         //GameRegistry.registerItem(quartzHoe, "Quartz Hoe");
 
+        // Copper
+        // TODO: Make Textures for Copper before being re-enabled.
+        //GameRegistry.registerItem(copperPickaxe, "Copper Pickaxe");
+        //GameRegistry.registerItem(copperShovel, "Copper Shovel");
+        //GameRegistry.registerItem(copperAxe, "Copper Axe");
+        //GameRegistry.registerItem(copperSword, "Copper Sword");
+        //GameRegistry.registerItem(copperHoe, "Copper Hoe");
+
         // Armor
         // Emerald
         GameRegistry.registerItem(emeraldHelmet, "Emerald Helmet");
@@ -298,5 +328,12 @@ public class ModItems {
         //GameRegistry.registerItem(quartzChestplate, "Quartz Chestplate");
         //GameRegistry.registerItem(quartzLeggings, "Quartz Leggings");
         //GameRegistry.registerItem(quartzBoots, "Quartz Boots");
+
+        // Copper
+        // TODO: Make Textures for Copper before being re-enabled.
+        //GameRegistry.registerItem(copperHelmet, "Copper Helmet");
+        //GameRegistry.registerItem(copperChestplate, "Copper Chestplate");
+        //GameRegistry.registerItem(copperLeggings, "Copper Leggings");
+        //GameRegistry.registerItem(copperBoots, "Copper Boots");
     }
 }
