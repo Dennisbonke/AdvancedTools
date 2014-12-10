@@ -77,6 +77,7 @@ public class ModItems {
     public static Item emeraldBoots = new EmeraldArmor("EmeraldBoots", "emeraldboots", emeraldArmor, 3);
 
     // Enderion
+    // TODO: To be replaced to Advanced Machines
     // TODO: Change Tool and Armor material values to fit Enderion.
     // TODO: Finish Enderion.
     public static Item.ToolMaterial enderion = EnumHelper.addToolMaterial("Enderion", 3, 2000, 11.0f, 4.5f, 32);
@@ -128,6 +129,7 @@ public class ModItems {
     //public static Item flintBoots = new FlintArmor("flintBoots", "flintboots", flintArmor, 3);
 
     // Netherion
+    // TODO: To be replaced to Advanced Machines
     // TODO: Change Tool and Armor material values to fit Netherion.
     // TODO: Finish Netherion.
     //public static Item.ToolMaterial netherion = EnumHelper.addToolMaterial("Netherion", 2, 400, 6.5f, 3.0f, 15);
@@ -145,6 +147,7 @@ public class ModItems {
     //public static Item netherionBoots = new NetherionArmor("netherionBoots", "netherionboots", netherionArmor, 3);
 
     // Quartz
+    // TODO: To be replaced to Advanced Machines
     // TODO: Change Tool and Armor material values to fit Quartz.
     // TODO: Finish Quartz.
     //public static Item.ToolMaterial quartz = EnumHelper.addToolMaterial("Quartz", 2, 400, 6.5f, 3.0f, 15);
@@ -162,6 +165,7 @@ public class ModItems {
     //public static Item quartzBoots = new QuartzArmor("quartzBoots", "quartzboots", quartzArmor, 3);
 
     // Copper
+    // TODO: To be replaced to Advanced Machines
     // TODO: Change Tool and Armor material values to fit Copper.
     // TODO: Finish Copper.
     //public static Item.ToolMaterial copper = EnumHelper.addToolMaterial("Copper", 2, 400, 6.5f, 3.0f, 15);
@@ -230,6 +234,7 @@ public class ModItems {
         GameRegistry.registerItem(boneHoe, "Bone Hoe");
 
         // Enderion
+        // TODO: To be replaced to Advanced Machines
         GameRegistry.registerItem(enderionPickaxe, "Enderion Pickaxe");
         GameRegistry.registerItem(enderionShovel, "Enderion Shovel");
         GameRegistry.registerItem(enderionAxe, "Enderion Axe");
@@ -253,6 +258,7 @@ public class ModItems {
         //GameRegistry.registerItem(flintHoe, "Flint Hoe");
 
         // Netherion
+        // TODO: To be replaced to Advanced Machines
         // TODO: Make Textures for Netherion before being re-enabled.
         //GameRegistry.registerItem(netherionPickaxe, "Netherion Pickaxe");
         //GameRegistry.registerItem(netherionShovel, "Netherion Shovel");
@@ -261,6 +267,7 @@ public class ModItems {
         //GameRegistry.registerItem(netherionHoe, "Netherion Hoe");
 
         // Quartz
+        // TODO: To be replaced to Advanced Machines
         // TODO: Make Textures for Quartz before being re-enabled.
         //GameRegistry.registerItem(quartzPickaxe, "Quartz Pickaxe");
         //GameRegistry.registerItem(quartzShovel, "Quartz Shovel");
@@ -269,6 +276,7 @@ public class ModItems {
         //GameRegistry.registerItem(quartzHoe, "Quartz Hoe");
 
         // Copper
+        // TODO: To be replaced to Advanced Machines
         // TODO: Make Textures for Copper before being re-enabled.
         //GameRegistry.registerItem(copperPickaxe, "Copper Pickaxe");
         //GameRegistry.registerItem(copperShovel, "Copper Shovel");
@@ -316,6 +324,7 @@ public class ModItems {
         //GameRegistry.registerItem(flintBoots, "Flint Boots");
 
         // Netherion
+        // TODO: To be replaced to Advanced Machines
         // TODO: Make Textures for Netherion before being re-enabled.
         //GameRegistry.registerItem(netherionHelmet, "Netherion Helmet");
         //GameRegistry.registerItem(netherionChestplate, "Netherion Chestplate");
@@ -323,6 +332,7 @@ public class ModItems {
         //GameRegistry.registerItem(netherionBoots, "Netherion Boots");
 
         // Quartz
+        // TODO: To be replaced to Advanced Machines
         // TODO: Make Textures for Quartz before being re-enabled.
         //GameRegistry.registerItem(quartzHelmet, "Quartz Helmet");
         //GameRegistry.registerItem(quartzChestplate, "Quartz Chestplate");
@@ -330,6 +340,7 @@ public class ModItems {
         //GameRegistry.registerItem(quartzBoots, "Quartz Boots");
 
         // Copper
+        // TODO: To be replaced to Advanced Machines
         // TODO: Make Textures for Copper before being re-enabled.
         //GameRegistry.registerItem(copperHelmet, "Copper Helmet");
         //GameRegistry.registerItem(copperChestplate, "Copper Chestplate");

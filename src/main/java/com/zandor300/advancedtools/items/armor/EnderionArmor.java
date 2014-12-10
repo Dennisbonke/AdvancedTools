@@ -4,6 +4,7 @@ import com.zandor300.advancedtools.creativetab.CreativeTabATTools;
 import com.zandor300.advancedtools.items.genericitems.ATItemArmor;
 import com.zandor300.advancedtools.reference.Reference;
 
+@Deprecated
 public class EnderionArmor extends ATItemArmor{
     public EnderionArmor(String name, String texture, ArmorMaterial material, int j) {
         super(material, j, j);
