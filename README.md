@@ -1,6 +1,7 @@
 <h1>AdvancedTools</h1>
 
-AdvancedTools Mod!
+AdvancedTools Mod!<br>
+Starting rewrite to 1.8.
 
 Jenkins: http://play.zsinfo.nl:8080/job/AdvancedTools/
 
