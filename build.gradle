@@ -15,11 +15,32 @@ buildscript {
     }
 }
 
+//add dependency repositories
+repositories {
+    maven {
+        name = "Advanced Mods maven"
+        url = "http://play.zsinfo.nl/maven/"
+    }
+}
+
 apply plugin: 'forge'
 
-version = "1.0"
-group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+project.ext.buildnumber = "CUSTOM_BUILD" // referenced as project.buildnumber
+
+if (System.getenv().BUILD_NUMBER) // assuming jenkins ofcourse
+{
+    project.buildnumber = System.getenv().BUILD_NUMBER
+    println "Using build number ${project.buildnumber}..."
+}
+else
+{
+    project.buildnumber = "0"
+    println "!! No build number set !!"
+}
+
+version = "1.7.10-0.1.0-A1" + "-" + project.buildnumber
+group= "com.advancedmods.advancedtools" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "AdvancedTools"
 
 minecraft {
     version = "1.7.10-10.13.2.1240"
@@ -35,6 +56,7 @@ dependencies {
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
+    compile 'com.advancedmods:AMCore:1.7.10-0.2.1-B1-571:dev'
 
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
