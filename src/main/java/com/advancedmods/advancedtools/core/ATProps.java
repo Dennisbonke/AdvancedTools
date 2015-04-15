@@ -8,8 +8,8 @@ import com.advancedmods.amcore.core.AMCoreProps;
 public class ATProps {
 
     // Versioning
-    public static final String REQUIRED_MC_VERSION = "1.7.10";
-    public static final String VERSION_COMPLETE = "1.7.10R0.1.0A1";
+    public static final String MC_VERSION = "1.7.10";
+    public static final String VERSION_COMPLETE = "1.7.10R0.2.0A1";
     public static final String FORGE_BASE = "10.13.2.";
     public static final String FORGE_BUILD = "1240";
     public static final String FORGE_VERSION = "[" + FORGE_BASE + FORGE_BUILD + "]";
