@@ -19,4 +19,9 @@ public class CreativeTabATCombat extends CreativeTabs {
         return Items.diamond_sword;
     }
 
+    @Override
+    public String getTabLabel() {
+        return "advancedtools:combat";
+    }
+
 }

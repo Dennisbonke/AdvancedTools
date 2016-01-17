@@ -19,4 +19,8 @@ public class CreativeTabATMaterials extends CreativeTabs {
         return Items.iron_ingot;
     }
 
+    @Override
+    public String getTabLabel() {
+        return "advancedtools:materials";
+    }
 }
