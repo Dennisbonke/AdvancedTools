@@ -16,10 +16,16 @@ buildscript {
 }
 
 //add dependency repositories
+//repositories {
+//    maven {
+//        name = "Advanced Mods maven"
+//        url = "http://play.zsinfo.nl/maven/"
+//    }
+//}
 repositories {
     maven {
-        name = "Advanced Mods maven"
-        url = "http://play.zsinfo.nl/maven/"
+	name = "Advanced Mods maven"
+	url = "http://maven.zsnode.com"
     }
 }
 
@@ -43,7 +49,7 @@ group= "com.advancedmods.advancedtools" // http://maven.apache.org/guides/mini/g
 archivesBaseName = "AdvancedTools"
 
 minecraft {
-    version = "1.7.10-10.13.2.1240"
+    version = "1.7.10-10.13.4.1614-1.7.10"
     runDir = "eclipse"
 }
 
@@ -56,7 +62,7 @@ dependencies {
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
-    compile 'com.advancedmods:AMCore:1.7.10-0.2.1-B4-579:dev'
+    compile 'com.advancedmods:AMCore:1.7.10-0.2.2-B1-0:dev'
 
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
